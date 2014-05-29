@@ -1,0 +1,155 @@
+.UILinkButton{position:relative;float:left;z-index:1;padding:0px;height:22px;}
+.ff3 .UILinkButton{padding-top:1px;}
+.UILinkButton .UILinkButton_A{margin:0px;padding:3px 10px 6px 12px;/* @noflip */
+background:transparent url(../Images/UILinkButton_Gray.png) top left no-repeat;border:0px;height:22px;color:white;font-size:11px;font-weight:bold;position:relative;cursor:pointer;/* @noflip */
+float:left;}
+.ie6 .UILinkButton .UILinkButton_A,
+.ie7 .UILinkButton .UILinkButton_A{padding:3px 3px 3px 5px;}
+.ff2 .UILinkButton .UILinkButton_A{padding:3px 6px 3px 8px;}
+.ff3 .UILinkButton .UILinkButton_A{padding:2px 6px 4px 8px;}
+.ie6 .UILinkButton_A{background:transparent;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../Images/UILinkButton_Gray.png", sizingMethod="crop");}
+.UILinkButton .UILinkButton_R{/* @noflip */
+right:0px;top:0px;background:transparent url(../Images/UILinkButton_Gray.png) -248px 0px no-repeat;width:2px;height:27px;position:absolute;}
+.UILinkButton .UILinkButton_RW{width:2px;height:22px;overflow:hidden;position:relative;/* @noflip */
+float:left;}
+.ie6 .UILinkButton .UILinkButton_R{background:transparent;width:250px;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../Images/UILinkButton_Gray.png", sizingMethod="crop");}
+.UILinkButton_SU .UILinkButton_R{background-image:url(../Images/UILinkButton_Gray.png);}
+.ie6 .UILinkButton_SU .UILinkButton_R{background:transparent;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../Images/UILinkButton_Gray.png", sizingMethod="crop");}
+.UILinkButton_SU .UILinkButton_A{background-image:url(../Images/UILinkButton_Gray.png);}
+.ie6 .UILinkButton_SU .UILinkButton_A{background:transparent;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../Images/UILinkButton_Gray.png", sizingMethod="crop");}
+.UILinkButton_BM .UILinkButton_R{background-image:url(../Images/UILinkButton_GrayMedium.png);}
+.ie6 .UILinkButton_BM .UILinkButton_R{background:transparent;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../Images/UILinkButton_GrayMedium.png", sizingMethod="crop");}
+.UILinkButton_BM .UILinkButton_A{background-image:url(../Images/UILinkButton_GrayMedium.png);}
+.ie6 .UILinkButton_BM .UILinkButton_A{background:transparent;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../Images/UILinkButton_GrayMedium.png", sizingMethod="crop");}
+.UILinkButton_BM .UILinkButton_A,
+.UILinkButton_BM .UILinkButton_RW{height:24px;}
+.UILinkButton_SUBig .UILinkButton_R{background-image:url(../Images/UILinkButton_GrayBig.png);}
+.ie6 .UILinkButton_SUBig .UILinkButton_R{background:transparent;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../Images/UILinkButton_GrayBig.png", sizingMethod="crop");}
+.UILinkButton_SUBig .UILinkButton_A{background-image:url(../Images/UILinkButton_GrayBig.png);}
+.ie6 .UILinkButton_SUBig .UILinkButton_A{background:transparent;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../Images/UILinkButton_GrayBig.png", sizingMethod="crop");}
+.UILinkButton_SUBig .UILinkButton_A,
+.UILinkButton_SUBig .UILinkButton_RW{height:27px;font-size:13px;}
+.UILinkButton_SUBig .UILinkButton_A{padding:5px 16px 5px 18px;}
+.ie6 .UILinkButton_SUBig .UILinkButton_A,
+.ie7 .UILinkButton_SUBig .UILinkButton_A{padding:5px 9px 5px 11px;}
+.ff2 .UILinkButton_SUBig .UILinkButton_A{padding:5px 12px 5px 14px;}
+.ff3 .UILinkButton_SUBig .UILinkButton_A{padding:4px 12px 6px 14px;}
+.UILinkButton_Aux .UILinkButton_R{background-image:url(../Images/UILinkButton_Gray.png);}
+.ie6 .UILinkButton_Aux .UILinkButton_R{background:transparent;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../Images/UILinkButton_Gray.png", sizingMethod="crop");}
+.UILinkButton_Aux .UILinkButton_A{background-image:url(../Images/UILinkButton_Gray.png);color:#666;font-weight:normal;}
+.ie6 .UILinkButton_Aux .UILinkButton_A{background:transparent;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../Images/UILinkButton_Gray.png", sizingMethod="crop");}
+
+
+.simple_registration_container{width:400px;margin:0px auto 0px auto;padding-bottom:30px;}
+#main_container .UIWindowShade{padding-top:20px;}
+#main_container{width:600px;margin:0px auto 30px auto;}
+#reg_form_box{padding-left:0px;}
+#main_container .UISimpleMessage_Container{padding:30px;}
+#main_container #error{margin-top:20px;}
+#main_container .terms_footer{margin:0 0 40px 2px;padding-top:2px;}
+.registration #nonfooter .UIFullPage_Container{padding-top:0;}
+
+
+.WelcomePage_Container{padding:0px;margin:0px;}
+.WelcomePage{background:#fff url(../Images/linear_shim.png) top left repeat-x;}
+.WelcomePage_MainSellContainer{background:transparent url(../Images/linear_tile.jpg) bottom center repeat-x;}
+.WelcomePage_MainSell{margin:0px;padding-top:36px;background:transparent url(../Images/background1.png) bottom center;}
+.WelcomePage_MainSellCenter{margin:0 auto;padding:0 12px;width:940px;position:relative;}
+.WelcomePage_Warnings{padding:0px 6px 30px;}
+.WelcomePage_MainSellLeft{float:left;width:536px;padding-bottom:20px;}
+.WelcomePage_MainSellRight{width:396px;padding:0px;float:right;}
+.WelcomePage_WhyJoin{font-size:20px;color:#203360;width:918px;margin:20px auto 0 auto;}
+.Carousel_Testimonial{width:400px;color:#203360;}
+.Carousel_Title{font-size:20px !important;line-height:29px;word-spacing:-1px;color:#203360;font-weight:bold !important;}
+.Carousel_Title_Medium{font-size:18px;margin-top:5px;}
+.Carousel_TestimonialSource{font-size:10px;font-style:italic;}
+.Carousel_TestimonialQuote{margin-top:20px;color:#333333;font-size:17px;}
+.WelcomePage_FriendField{font-size:20px;}
+.Carousel_FriendFormTitle{margin-top:30px;font-size:15px;}
+.Carousel_FriendFormDescription{font-size:11px;margin-top:7px;margin-bottom:5px;}
+.WelcomePage_FriendForm #address_book_login_widget{margin-top:5px;}
+.WelcomePage_FriendForm .disclaimer{padding-top:5px;color:#555555;}
+.ABTest_RegSwap .WelcomePage_MainSellLeft{float:right;width:463px;}
+.ABTest_RegSwap .WelcomePage_MainSellRight{float:left;margin-left:10px;}
+.UIFeaturette_Container{padding-top:20px;}
+.UIFeaturette_Row{margin:0px auto 0px auto;width:918px;}
+.UIFeaturette_Item{margin-right:10px;margin-bottom:0px;padding:0px;width:222px;float:left;}
+.UIFeaturette_Image{height:131px;background-image:url(/images/bottombar.png);}
+.UIFeaturette_Image_Photos{background-position:0 0;}
+.UIFeaturette_Image_Personal{background-position:222px 0px;}
+.UIFeaturette_Image_Million{background-position:0px 131px;}
+.UIFeaturette_Image_Reconnect{background-position:222px 131px;}
+.UIFeaturette_ItemLast{margin-right:0px;}
+.UIFeaturette_Label{margin-top:16px;font-size:13px;color:#333333;height:100px;}
+.UIFeaturette_Label_Title{margin-bottom:10px;font-weight:bold;}
+.WelcomePage_MainMessage{padding-right:60px;margin:0px;margin-top:1px;margin-left:-25px;font-size:20px !important;line-height:29px;word-spacing:-1px;color:#203360;font-weight:bold !important;}
+.WelcomePage_VoteGraphic .WelcomePage_MainMap{margin-top:28px;visibility:hidden;}
+.WelcomePage_VoteGraphicPlaced{position:absolute;top:36px;left:-40px;z-index:0;display:block;margin:0px;padding:0px;background:transparent;}
+.WelcomePage_VoteGraphicEnglishContainer{margin:0 auto;padding:0 12px;width:940px;position:relative;z-index:0;}
+.WelcomePage_VoteGraphicEnglishPlaced{width:507px;height:42px;top:36px;left:-40px;position:absolute;background:transparent url(../Images/welcome_vote08_en_top.png) top left no-repeat;}
+.WelcomePage_VoteGraphicEnglish .WelcomePage_VoteGraphicPlaced{top:78px;}
+.WelcomePage_VoteGraphicPlaced a{display:block;margin:0px;padding:0px;}
+.WelcomePage_VoteGraphicPlaced a:hover{text-decoration:none;}
+.WelcomePage_VoteGraphicPlaced_EN{background:transparent url(../Images/welcome_vote08_en_bottom.png) top left no-repeat;width:507px;height:222px;cursor:pointer;display:block;margin:0px;padding:0px;}
+.WelcomePage_VoteGraphicPlaced_ES{background:transparent url(../Images/welcome_vote08_es.png) top left no-repeat!important;background:transparent;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../Images/welcome_vote08_es.png", sizingMethod="scale");width:533px;height:264px;margin:0px;padding:0px;}
+.WelcomePage_ElectionContainer{margin:0 auto;padding:0 12px;width:940px;position:relative;z-index:1;}
+.WelcomePage_MainMap{width:550px;height:300px;margin-left:-80px;margin-top:20px;background:transparent url(../Images/atlas-indo-51.png) top left no-repeat!important;background:transparent;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/welcome/welcome_page_map.png", sizingMethod="scale");}
+.WelcomePage_SimpleReg{padding:10px 0px 20px 0px;}
+.WelcomePage_SignUpSection{padding:0px;margin:0px;width:388px;}
+.WelcomePage_SignUpMessage{margin:0px;padding:0px;}
+.WelcomePage_SignUpHeadline{font-size:20px !important;line-height:29px;word-spacing:-1px;color:#203360;font-weight:bold; margin-left:30px !important;}
+.WelcomePage_SignUpSubheadline{font-size:20px !important;line-height:29px;word-spacing:-1px;padding-top:1px;color:#203360;}
+.WelcomePage_SignUpForm{padding-top:21px;}
+.WelcomePage_SignUpText{font-size:13px !important;color:#1d2a5b;padding-bottom:5px;}
+.WelcomePage_SignUpName .inputtext{font-size:27px;border-color:#1d2a5b;margin-left:0px;width:200px;}
+.WelcomePage_SignUpNameRight{padding-left:10px;}
+.WelcomePage_SignUpName #firstname,
+.WelcomePage_SignUpName #lastname{width:150px;}
+.WelcomePage_SignUpButton{padding-top:18px;}
+.WelcomePage_SignUpStep2{position:absolute;left:650px;width:396px;}
+.WelcomePage_SignUpStep2 .WelcomePage_SignUpMessage{padding-bottom:20px;}
+.WelcomePage_SignUpStep2 .reg_btn{padding-top:10px;}
+.WelcomePage_SignUpStep3{position:absolute;left:650px;width:396px;}
+.WelcomePage_SignUpStep3 .WelcomePage_SignUpMessage{padding-bottom:10px;}
+.WelcomePage_SignUpStep3 #captcha .captcha_challenge img{border:1px solid #1d2a5b;}
+.WelcomePage_SignUpStep3 #captcha .captcha_input input{/* @noflip */
+direction:ltr;border:1px solid #1d2a5b;}
+.WelcomePage_SignUpStep3 #captcha .captcha_input{padding-top:10px;}
+.WelcomePage_SignUpStep3 #captcha{padding-bottom:15px;}
+.WelcomePage_SignUpStep3 #captcha #recaptcha_image{margin-top:5px;}
+.WelcomePage_SignUpStep3 .captcha_optout{display:none;}
+.WelcomePage_Terms{padding-top:15px;width:300px;}
+.WelcomePage .editor td.label, 
+.WelcomePage .captcha_input label{font-weight:normal !important;}
+.captcha_input label{width:90px;margin:0 0 0 1px;color:#333;}
+.captcha_input input{/* @noflip */
+direction:ltr;}
+#reg_form_box .editor{margin:0 -50px 0 -30px;}
+#reg_box{padding:0px;margin:0;}
+#reg_box .label{color:#1d2a5b;text-align:center;font-weight:bold;padding-right:2px;width:90px;}
+#reg_box .inputtext, #reg_box .inputpassword{width:160px;border-color:#96a6c5;margin-top:2px;}
+#reg_box select{margin:2px 0 0 0;}
+.ff2 #reg_box select,
+.ff3 #reg_box select{border-color:#96a6c5;}
+#reg_box #birthday_warning{font-size:9px;margin-left:1px;}
+#reg_progress{font-size:13px !important;text-align:center;margin:0;font-weight:bold;padding:0;}
+#reg_progress img{margin-right:15px;}
+#reg_progress #progress_wrap{padding:80px 0 0 0;margin:0;text-align:center;}
+#reg_progress .popup_retry{font-weight:normal;margin:auto;text-align:center;width:200px;}
+#terms{margin:0 5px 0 0px;}
+#reg_form_box .reg_terms_box{margin-left:70px;padding-top:15px;}
+#openid_buttons_box{background:#fff9d7;border:solid 1px #e2c822;font-size:10ipx;margin:0 0 10px 0;padding:10px;}
+select#openid_buttons_box{font-size:11px;}
+p.legal_tos{color:#555;font-size:9px;padding:0px;margin:0px 0px 10px 0px;}
+.option_field{margin-bottom:10px;}
+.option_field label{font-weight:normal !important;}
+#reg_form_box .reg_btn{margin:0 0 0 95px;}
+#reg_form_box #cancel_button{float:left;}
+#reg_error,
+* html table.editor select{margin-left:0px;}
+#reg_captcha #cancel_button{float:left;font-size:12px;line-height:14px;font-weight:bold;border:0px solid transparent;color:#3b5998;margin:6px 0 0 0;width:75px;}
+#reg_captcha .cancel_button_image{float:left;width:12px;height:17px;margin:6px 0 0 0;background-image:url(/images/filter_show_ltr.png);background-position:middle left;background-repeat:no-repeat;}
+.ie6 #reg_captcha .cancel_button_image{background:transparent;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/filter_show_ltr.png", sizingMethod="crop");}
+
+
+#bootloader_css_8miun4q7u6cko4os_pkg_css { height: 42px; }

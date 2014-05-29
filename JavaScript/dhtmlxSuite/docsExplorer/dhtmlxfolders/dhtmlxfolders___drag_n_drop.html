@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
+    dhtmlxfolders:drag_n_drop    [Skin test wiki]
+  </title></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Documentation homepage"></a>
+    <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
+
+    <div class="search-field">
+        <form action="http://dhtmlx.com/dhxdocs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>    </div>
+        <div class="buttons">
+                <a class="doc"></a>
+                <a title="DHTMLX Samples homepage" href="../samples.html" class="sample"/></a>
+        </div>
+     <!-- <div class="pagename">
+        [[<a href="#"  title="Backlinks">dhtmlxfolders:drag_n_drop</a>]]
+      </div>
+      <div class="logo">
+        <a href="/dhtmlx/_lab/wiki/doku.php"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">Skin test wiki</a>      </div>
+
+      <div class="clearer"></div>-->
+        
+    </div>
+
+    
+<!--   <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+                <form class="button btn_revs" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxfolders:drag_n_drop" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="recent" /><input type="hidden" name="id" value="dhtmlxfolders:drag_n_drop" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [R]" /></div></form>        <form action="http://dhtmlx.com/dhxdocs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div> -->
+
+<!--        <div class="breadcrumbs">
+      <span class="bchead">Trace:</span> <span class="bcsep">&raquo;</span> <span class="curid"><a href="/dhtmlx/_lab/wiki/doku.php?id=dhtmlxfolders:drag_n_drop"  class="breadcrumbs" title="dhtmlxfolders:drag_n_drop">drag_n_drop</a></span>    </div>
+    -->
+
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    
+<p>
+<div class='backlinks'><div class='backlink last_backlink'><img src="icons___file.gif"  class="media" alt="" /><a href="../index.html" class="wikilink1" title="start">Index</a></div><div class='arrow'></div><div class='backlink last_backlink'><img src="icons___folders.gif"  class="media" alt="" /><a href="index.html" class="wikilink1" title="dhtmlxfolders:toc">dhtmlxfolders</a></div><div class='arrow'></div><div class='backlink'><span class="curid"><a href="dhtmlxfolders___drag_n_drop.html" class="wikilink1" title="dhtmlxfolders:drag_n_drop">  Drag-n-Drop </a></span></div></div>
+
+</p>
+
+<h2><a name="drag-n-drop" id="drag-n-drop">Drag-n-Drop</a></h2>
+<div class="level2">
+
+<p>
+
+dhtmlxFolders supports drag-n-drop in the following ways:
+</p>
+<ul>
+<li class="level1"><div class="li"> Drop before;</div>
+</li>
+<li class="level1"><div class="li"> Drop next;</div>
+</li>
+<li class="level1"><div class="li"> Drop in.</div>
+</li>
+</ul>
+
+<p>
+
+To enable drag-n-drop you need to call the following command:
+
+</p>
+<pre class="code javascript">  myFolders.<a href='dhtmlxfolders___api_method_dhtmlxfolders_enabledraganddrop.html'><b><span class="me1">enableDragAndDrop</span></b></a><span class="br0">&#40;</span><span class="kw2">true</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+As far as drag-n-drop uses two images  (included into dhtmlxFolders delivery package)  to visualize before/next drop types, you also need to set path to codebase/imgs folder:
+
+</p>
+<pre class="code javascript">  myFolders.<a href='dhtmlxfolders___api_method_dhtmlxfolders_setimagepath.html'><b><span class="me1">setImagePath</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;../../codebase/imgs/&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+As far as drag-n-drop in dhtmlxFolders has default actions for “before” and “next” drop types (move source item before/next target item), but no default action for “in” drop type,  you&#039;ll need to define it on your own , or it will just do nothing. Action for any type of drag-n-drop can be reset using onBeforeDrop event handler. For example:
+
+</p>
+<pre class="code javascript">  myFolders.<a href='dhtmlxfolders___api_method_dhtmlxfolders_attachevent.html'><b><span class="me1">attachEvent</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;onBeforeDrop&quot;</span><span class="sy0">,</span><span class="kw2">function</span><span class="br0">&#40;</span>dropType<span class="sy0">,</span>sID<span class="sy0">,</span>tID<span class="br0">&#41;</span><span class="br0">&#123;</span>
+    <span class="co1">//find type of target item (in this case - directory or file)</span>
+    <span class="kw2">var</span> tType <span class="sy0">=</span> <span class="kw1">this</span>.<a href='dhtmlxfolders___api_method_dhtmlxfolders_getitem.html'><b><span class="me1">getItem</span></b></a><span class="br0">&#40;</span>tID<span class="br0">&#41;</span>.<span class="me1">data</span>.<span class="me1">dataObj</span>.<span class="me1">getAttribute</span><span class="br0">&#40;</span><span class="st0">&quot;type&quot;</span><span class="br0">&#41;</span>;
+    <span class="co1">//if type of drop is &quot;in&quot; and target item is directory - remove source item from folders</span>
+    <span class="kw1">if</span><span class="br0">&#40;</span>dropType<span class="sy0">==</span><span class="st0">&quot;in&quot;</span> <span class="sy0">&amp;&amp;</span> tType<span class="sy0">==</span><span class="st0">&quot;dir&quot;</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+      <span class="kw1">this</span>.<a href='dhtmlxfolders___api_method_dhtmlxfolders_deleteitem.html'><b><span class="me1">deleteItem</span></b></a><span class="br0">&#40;</span>sID<span class="br0">&#41;</span>;
+      <span class="co1">//...and cancel default action</span>
+      <span class="kw1">return</span> <span class="kw2">false</span>;
+    <span class="br0">&#125;</span><span class="kw1">else</span> <span class="co1">//else proceed wth default action</span>
+      <span class="kw1">return</span> <span class="kw2">true</span>;
+  <span class="br0">&#125;</span><span class="br0">&#41;</span></pre>
+<p>
+
+If this event handler returns false, then default action will be canceled. Thus it can be used to decide if drop should be allowed or not depending on drop type, source and target items.
+</p>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     <!-- <div class="doc">
+        dhtmlxfolders/drag_n_drop.txt &middot; Last modified: 2009/07/30 12:56 (external edit)      </div>
+    </div>-->
+
+   
+    <!--<div class="bar" id="bar__bottom">-->
+      <!--<div class="bar-left" id="bar__bottomleft">-->
+        <!---->
+        <!--<form class="button btn_revs" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxfolders:drag_n_drop" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>-->
+      <!--</div>-->
+      <!--<div class="bar-right" id="bar__bottomright">-->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!--<form class="button btn_login" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="sectok" value="6669be9c50b33a8199692f20daec10b8" /><input type="hidden" name="id" value="dhtmlxfolders:drag_n_drop" /><input type="submit" value="Login" class="button" title="Login" /></div></form>-->
+        <!--<form class="button btn_index" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="index" /><input type="hidden" name="id" value="dhtmlxfolders:drag_n_drop" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [X]" /></div></form>-->
+        <!--<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;-->
+      <!--</div>-->
+      <!--<div class="clearer"></div>-->
+    <!--</div>-->
+
+  </div>
+
+  
+
+</div>
+
+<div class="footerinc">
+
+
+</div>
+
+<div class="no"><img src="/dhtmlx/_lab/wiki/lib/exe/indexer.php?id=dhtmlxfolders%3Adrag_n_drop&amp;1257950516" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2009 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

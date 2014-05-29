@@ -1,0 +1,254 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage1.master.cs" Inherits="MasterPages_MasterPage1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="height:100%;">
+<head runat="server">
+    <title>Perusahaan Gas Negara</title>
+    
+    <link href="../pgn/css/dropdown/dropdown.css" media="all" rel="stylesheet" type="text/css" />    <link href="../pgn/css/style.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="../pgn/css/dropdown/themes/default.ultimate.css" media="all" rel="stylesheet" type="text/css" />
+	
+    <%--<link rel='stylesheet' type='text/css' href='../css/menu.css' />--%>
+    <link rel='stylesheet' type='text/css' href='../css/tanfa.css' />
+    <link rel='stylesheet' type='text/css' href='../css/commons.css' />
+    <%--<style type="text/css">
+      @import "http://gis.pgn.co.id/arcgis_js_api/library/1.4/arcgis/js/dojo/dijit/themes/tundra/tundra.css";
+      </style>--%>
+      
+    <link rel="STYLESHEET" type="text/css" href="../JavaScript/codebase/dhtmlxtabbar.css" />
+    <link rel="STYLESHEET" type="text/css" href="../JavaScript/codebase/dhtmlxcalendar.css" />
+<%--    <link rel="STYLESHEET" type="text/css" href="../JavaScript/codebase/dhtmlxgrid.css" />--%>
+    <link rel="stylesheet" type="text/css" href="../JavaScript/dhtmlxsuite/dhtmlxgrid/codebase/dhtmlxgrid.css" />
+    <link rel="stylesheet" type="text/css" href="../JavaScript/codebase/skins/dhtmlxgrid_dhx_skyblue.css" />
+    <link rel="stylesheet" type="text/css" href="../JavaScript/codebase/skins/dhtmlxaccordion_dhx_blue.css" />
+    <link rel="stylesheet" type="text/css" href="../JavaScript/dhtmlxsuite/dhtmlxtoolbar/codebase/skins/dhtmlxtoolbar_dhx_skyblue.css" />
+    <link rel="stylesheet" type="text/css" href="../JavaScript/codebase/skins/dhtmlxgrid_pgn_bricks.css" />
+    <link rel="stylesheet" type="text/css" href="../JavaScript/dhtmlxsuite/dhtmlxCombo/codebase/dhtmlxcombo.css" />
+    <%--<link rel="STYLESHEET" type="text/css" href="../JavaScript/codebase/skins/status_toolbar_accordion.css" />
+    <link rel="STYLESHEET" type="text/css" href="../JavaScript/codebase/skins/status_toolbar_layout.css" />
+    <link rel="STYLESHEET" type="text/css" href="../JavaScript/codebase/skins/status_toolbar_window.css" />--%>
+    <link rel="STYLESHEET" type="text/css" href="../JavaScript/dhtmlxSuite/dhtmlxchart/codebase/dhtmlxchart.css" />
+    <link rel="stylesheet" type="text/css" href="../JavaScript/dhtmlxSuite/dhtmlxLayout/codebase/dhtmlxlayout.css" />
+    <link rel="stylesheet" type="text/css" href="../JavaScript/dhtmlxSuite/dhtmlxLayout/codebase/skins/dhtmlxlayout_dhx_skyblue.css" />
+    <link rel="stylesheet" type="text/css" href="../JavaScript/dhtmlxSuite/dhtmlxWindows/codebase/dhtmlxwindows.css" />
+    <link rel="stylesheet" type="text/css" href="../JavaScript/dhtmlxSuite/dhtmlxWindows/codebase/skins/dhtmlxwindows_dhx_skyblue.css" />
+	<%--<link rel="stylesheet" type="text/css" href="../JavaScript/codebase/message/themes/message_skyblue.css" title="SkyBlue" />--%>
+	
+    <link rel="SHORTCUT ICON" href="../favicon.ico" />
+    
+    <style type="text/css"> .toolbarTable{background-color:#EDEDED;}</style>
+
+    <%--<script type="text/jscript" language="javascript" src="JScript.js"> </script>--%>
+    <script  src="../JavaScript/lookup.js" type="text/javascript"></script>
+    <script  src="../JavaScript/commons.js" type="text/javascript"></script>
+    <script type="text/javascript">djConfig = { parseOnLoad:true }</script>
+    <%--<script type="text/javascript" src="http://gis.pgn.co.id/arcgis_js_api/library/1.4/arcgis/"></script>--%>
+    
+    <script type="text/javascript" language="javascript">
+        try
+        {
+//            document.getElementById('lookup').style.ma 
+//            screen.availHeight
+            //alert(screen.availHeight); alert(screen.availWidth); alert(screen.height); alert(screen.width);
+        }
+        catch(e)
+        {
+            alert(e.description);
+        }
+    </script>
+    <script  src="../JavaScript/codebase/dhtmlxcommon.js" type="text/javascript"></script>
+    <%--<script src="../JavaScript/dhtmlxSuite/dhtmlxTabbar/codebase/dhtmlxcommon.js" type="text/javascript"></script>--%>
+    <script src="../JavaScript/dhtmlxSuite/dhtmlxTabbar/codebase/dhtmlxtabbar.js" type="text/javascript"></script>
+    <script src="../JavaScript/dhtmlxSuite/dhtmlxTabbar/codebase/dhtmlxtabbar_start.js" type="text/javascript"></script>
+    <script src="../JavaScript/dhtmlxSuite/dhtmlxCalendar/codebase/dhtmlxcalendar.js" type="text/javascript"></script>
+    <script src="../JavaScript/dhtmlxSuite/dhtmlxAccordion/codebase/dhtmlxaccordion.js" type="text/javascript"></script>
+    <script src="../JavaScript/dhtmlxSuite/dhtmlxAccordion/codebase/dhtmlxcontainer.js"type="text/javascript"></script>
+    <%--<script src="../JavaScript/dhtmlxsuite/dhtmlxgrid/codebase/dhtmlxgrid.js" type="text/javascript"></script> --%>
+    <%--<script src="../JavaScript/dhtmlxsuite/dhtmlxgrid/codebase/dhtmlxgridcell.js" type="text/javascript"></script> --%>
+    <script  src="../JavaScript/codebase/dhtmlxgrid.js" type="text/javascript"></script>
+    <script  src="../JavaScript/codebase/dhtmlxgridcell.js" type="text/javascript"></script>
+    <script  src="../JavaScript/codebase/excells/dhtmlxgrid_excell_link.js" type="text/javascript"></script>
+    <script src="../JavaScript/dhtmlxSuite/dhtmlxLayout/codebase/dhtmlxlayout.js" type="text/javascript"></script>
+    <script src="../JavaScript/dhtmlxSuite/dhtmlxLayout/codebase/dhtmlxcontainer.js" type="text/javascript"></script>
+    <%--   
+    <script  src="../JavaScript/codebase/dhtmlxcommon.js" type="text/javascript"></script>
+    <script  src="../JavaScript/codebase/dhtmlxtabbar.js" type="text/javascript"></script>
+    <script  src="../JavaScript/codebase/dhtmlxtabbar_start.js" type="text/javascript"></script>
+    <script  src="../JavaScript/codebase/dhtmlxcalendar.js" type="text/javascript"></script>
+    <script src="../JavaScript/codebase/dhtmlxaccordion.js" type="text/javascript"></script>
+    <script src="../JavaScript/codebase/dhtmlxcontainer.js"type="text/javascript"></script>
+    <script  src="../JavaScript/codebase/dhtmlxgrid.js" type="text/javascript"></script>      
+    <script  src="../JavaScript/codebase/dhtmlxgridcell.js" type="text/javascript"></script>  --%>
+    <script  src="../JavaScript/codebase/excells/dhtmlxgrid_excell_link.js" type="text/javascript"></script>
+    <script  src="../JavaScript/dhtmlxSuite/dhtmlxGrid/codebase/ext/dhtmlxgrid_srnd.js" type="text/javascript"></script>
+    <script  src="../JavaScript/dhtmlxSuite/dhtmlxGrid/codebase/ext/dhtmlxgrid_filter.js" type="text/javascript"></script>
+    <script  src="../JavaScript/codebase/ext/dhtmlxgrid_pgn.js" type="text/javascript"></script>
+    <script  src="../JavaScript/dhtmlxsuite/dhtmlxtoolbar/codebase/dhtmlxToolbar.js" type="text/javascript"></script>
+    <%--<script  src="../JavaScript/codebase/ext/dhtmlxgrid_fast.js" type="text/javascript"></script>--%>
+    <%--<script  src="../JavaScript/codebase/ext/dhtmlxgrid_group.js" type="text/javascript"></script>--%>
+    <script  src="../JavaScript/codebase/ext/dhtmlxgrid_group2.js" type="text/javascript"></script>
+    <script src="../JavaScript/dhtmlxSuite/dhtmlxchart/codebase/dhtmlxchart.js" type="text/javascript"></script>
+    <script src="../JavaScript/dhtmlxSuite/dhtmlxCombo/codebase/dhtmlxcombo.js" type="text/javascript"></script>
+    <script  src="../JavaScript/codebase/ext/dhtmlxgrid_nxml.js" type="text/javascript"></script>
+    <script src="../JavaScript/dhtmlxSuite/dhtmlxWindows/codebase/dhtmlxwindows.js" type="text/javascript"></script>
+    <script src="../JavaScript/dhtmlxSuite/dhtmlxWindows/codebase/dhtmlxcontainer.js" type="text/javascript"></script>
+    <script  src="../JavaScript/dhtmlxSuite/dhtmlxCombo/codebase/ext/dhtmlxcombo_extra.js"></script>
+    <%--<script  src="../JavaScript/animator2.js" type="text/javascript"></script>--%>
+    <%--<script type="text/javascript" src='../Javascript/codebase/message/message.js'></script>--%>
+    <script src="../JavaScript/dhtmlxSuite/dhtmlxLayout/sources/patterns/dhtmlxlayout_pattern4g.js" type="text/javascript"></script>
+
+</head>
+<body style="color:Black; height:100%;">
+<%
+	if (!(Session["userID"] is object))
+	{
+		Response.Write("<script language=\"javascript\" type=\"text/javascript\">");
+		Response.Write("alert('Session sudah habis. Silakan login kembali.');");
+		Response.Write("location.href = '../Login.aspx';");
+		Response.Write("</script>");
+	}
+	else
+	{
+%>
+    <form id="form1" runat="server" style="height:100%">
+    <div id="backLookup" style="background-image: url(../img/backGroundGelap.png); width: 0px; height: 0px; visibility: visible; position: relative; z-index: -1;"></div>
+    <div id="lookup" style="width: 0px; height: 0px; visibility: hidden; 
+    -moz-border-radius-bottomleft: 5px; -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-topleft: 10px; -moz-border-radius-topright: 10px; border: 1px solid #000;">
+        <div id="judul" style="background-color: #ababab; vertical-align: middle; position: relative; height: 25px;
+        -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px;
+        margin-left: 0px; padding-left: 10px; padding-right: -10px;">
+        </div>
+        <div id="contentLookup" style="vertical-align: middle; position: relative; height: 265px; margin-top: 5px; margin-left: 5px; margin-right: 5px;">
+            <div style="padding-top: 5px; padding-left: 5px;">
+                <input type='text' id='lookupKey' value='' onkeypress="enterPressed(event,'lookupSearch(document.getElementById(\'lookupKey\').value);');" />&nbsp;&nbsp;
+                <input type='button' onclick="lookupSearch(document.getElementById('lookupKey').value);" value='Cari' />
+                &nbsp;&nbsp;<input type="button" value="Tutup" onclick="hideLookup('lookup');" />
+            </div>
+            <div id="gridLookup" style="width:100%;height:228px;background-color:white;"></div>
+        </div>
+    </div>
+    <div id="loadDiv" style="width: 0px; height: 0px; visibility:hidden;">
+        <img src="../img/circle.gif" alt="Loading..." style="position:relative;" />
+        <!--img src="../img/circle.gif" alt="Loading..." style="position:relative;" /-->
+    </div>
+    <!--div style="position: absolute; right: 0px; left: 0px; top: 0px; width: 100%; margin-bottom: 10px;"-->
+    
+    <div id="page-wrap">
+        <div id="top-bar">			<%--<img src="../pgn/images/logo.png" style="margin-top:5px;" alt="DZone" class="floatleft" />--%>			<div id="right-side">				<%--<img src="../pgn/images/usericon.jpg" alt="user icon" />&ensp;--%>				<span class="hedr"><%= " " + userName + " " %></span>&ensp;				<span class="hedr">|</span>&ensp;				<span class="hedr"><%= " " +  grupName + " " %></span>&ensp;								<%if (grupId.ToString().Equals("1"))
+        {      
+        %>				<span class="hedr"><a href="../admin/userlog.aspx"><asp:Label ID="onlineuser" runat="server"></asp:Label></a></span>			<%
+        }else {      
+		%>		<span class="hedr">|</span>&ensp;		<span class="hedr"><asp:Label ID="onlineusers" runat="server"></asp:Label></span>			<%
+        }      
+		        %>			</div>		</div>
+		
+		<div id="zone-bar">
+<ul id="nav" class="dropdown dropdown-horizontal">
+	<li id="n-awal"><a href="../Pages/MenuAwalFlex.aspx">Home</a><%--	    <ul>	        <li class="first"><a href="../Pages/MenuAwalFlex.aspx" title="">Menu Flex</a></li>	    </ul>--%>	</li>		<% if (grupId.ToString().Equals("21"))
+    { %>	<li id="n-home"><a href="#">Map</a>
+	    <ul>
+            <%--<li class="first"><a href="../Pages/MenuFlex.aspx" title="">Flex Online</a></li>
+            <li class="first"><a href="../Pages/MenuFlexo.aspx" title="">Flex Offline</a></li>
+            <li><a href="../pages/potensialimpact.aspx" title="" >Potential Impact Area</a></li>--%>
+            <li><a href="../pages/gaskonvensional.aspx" title="" >Gas Konvensional</a></li>
+        </ul>
+	</li>
+	<% } else { %>	<li id="n-home"><a href="../Pages/MenuUtama.aspx">Map</a>
+	    <ul>
+            <%--<li class="first"><a href="../Pages/MenuFlex.aspx" title="">Flex Online</a></li>
+            <li class="first"><a href="../Pages/MenuFlexo.aspx" title="">Flex Offline</a></li>--%>
+            <li><a href="../pages/potensialimpact.aspx" title="" >Potential Impact Area</a></li>
+        </ul>
+	</li>
+	<% if( grupId.ToString().Equals("27") || grupId.ToString().Equals("28")) 
+		{ %>
+			<li><a href="../Pages/closinginspeksi.aspx" title='Closing Inspeksi'>Closing Inspeksi</a></li>
+			<% 
+		}
+		else {
+		%>
+        
+        <%
+            if (grupId.ToString().Equals("1"))
+            {      
+        %>
+	<li id="n-admin"><span class="dir">Admin Tools</span>
+		<ul>
+			<li class="first"><a href="../Admin/UserManagement.aspx" >User Management</a></li>
+			<li class="first"><a href="../Admin/Codesmodul.aspx" >Codes Management</a></li>
+		</ul>
+	</li>
+	<%
+                    }      
+		        %>
+	<li id="n-news"><span class="dir">Aset</span>
+		<ul>
+			<li ><span class="dir">Katalog</span>				<ul>					<li ><span class="dir">Alat Ukur</span>						<ul>							<li class="first"><a href="../Admin/KatalogAMR.aspx">AMR</a></li>							<li><a href="../Admin/KatalogEVC.aspx">EVC</a></li>							<li><a href="../Admin/KatalogGasChrom.aspx">Gas Chormatograph</a></li>							<li><a href="../Admin/KatalogManometer.aspx">Manometer</a></li>							<li><a href="../Admin/KatalogFlowcomputer.aspx">Flow Computer</a></li>							<li><a href="../Admin/KatalogMekFlowRec.aspx">Mekanik Flow Recorder</a></li>							<li><a href="../Admin/KatalogMeter.aspx">Meter</a></li>							<li><a href="../Admin/Katalogorificeplate.aspx">Orifice Plate</a></li>							<li><span class="dir">Tranducer</span>								<ul>									<li><a href="../Admin/KatalogTempTransducer.aspx">Temperature Tranducer</a></li>									<li><a href="../Admin/KatalogpressTrans.aspx">Pressure Tranducer</a></li>								</ul>							</li>							<li><a href="../Admin/Katalogtermometer.aspx">Termometer</a></li>							<li><span class="dir">Transmitter</span>								<ul>									<li><a href="../Admin/KatalogTemptransmitter.aspx">Temperature Transmitter</a></li>									<li><a href="../Admin/KatalogPressTransmitter.aspx">Pressure Transmitter</a></li>									<li><a href="../Admin/KatalogDPtransmitter.aspx">DP Transmitter</a></li>								</ul>							</li>						</ul>					</li>					<li ><span class="dir">Alat Kontrol</span>						<ul>							<li class="first"><a href="../Admin/KatalogRegulator.aspx">Regulator</a></li>							<li><a href="../Admin/KatalogReliefvalve.aspx">Relief Valve</a></li>							<li><a href="../Admin/Katalogshutoffvalve.aspx">Shut Off Valve</a></li>							<li><a href="../Admin/Katalogvalve.aspx">Valve Stasiun</a></li>							<li><a href="../Admin/Katalogcheckvalve.aspx">Check Valve</a></li>							<li><a href="../Admin/KatalogFilter.aspx">Filter</a></li>						</ul>					</li>					<li ><span class="dir">Fasilitas</span>						<ul>							<li class="first"><a href="../Admin/Kataloginhibitor.aspx">Inhibitor</a></li>							<li><a href="../Admin/Katalogodorizer.aspx">Odorizer</a></li>						</ul>					</li>				</ul>			</li>
+			<li ><span class="dir">Mutasi</span>				<ul>					<li ><span class="dir">Alat Ukur</span>						<ul>							<li class="first"><a href="../Pages/AMR.aspx">AMR</a></li>							<li><a href="../Pages/EVC.aspx">EVC</a></li>							<li><a href="../Pages/Gaschromatic.aspx">Gas Chormatograph</a></li>							<li><a href="../Pages/manometer.aspx">Manometer</a></li>							<li><a href="../Pages/flowcomputer.aspx">Flow Computer</a></li>							<li><a href="../Pages/mekflowrec.aspx">Mekanik Flow Recorder</a></li>							<li><a href="../Pages/meter.aspx">Meter</a></li>							<li><a href="../Pages/Orificeplate.aspx">Orifice Plate</a></li>							<li><span class="dir">Tranducer</span>								<ul>									<li><a href="../Pages/TempTranducer.aspx">Temperature Tranducer</a></li>									<li><a href="../Pages/PressTranducer.aspx">Pressure Tranducer</a></li>									<%--<li><a href="../Pages/DPTransmitter.aspx">DP Tranducer</a></li>--%>								</ul>							</li>							<li><a href="../Pages/Termometer.aspx">Termometer</a></li>							<li><span class="dir">Transmitter</span>								<ul>									<li><a href="../Pages/TempTransmitter.aspx">Temperature Transmitter</a></li>									<li><a href="../Pages/PressTransmitter.aspx">Pressure Transmitter</a></li>									<li><a href="../Pages/DPTransmitter.aspx">DP Transmitter</a></li>								</ul>							</li>						</ul>					</li>					<li ><span class="dir">Alat Kontrol</span>						<ul>							<li class="first"><a href="../Pages/regulator.aspx">Regulator</a></li>							<li><a href="../Pages/reliefvalve.aspx">Relief Valve</a></li>							<li><a href="../Pages/shutoffvalve.aspx">Shut Off Valve</a></li>							<li><a href="../Pages/valvestasiun.aspx">Valve Stasiun</a></li>							<li><a href="../Pages/checkvalve.aspx">Check Valve</a></li>							<li><a href="../Pages/Filter.aspx">Filter</a></li>						</ul>					</li>					<li ><span class="dir">Fasilitas</span>						<ul>							<li class="first"><a href="../Pages/inhibitor.aspx">Inhibitor</a></li>							<li><a href="../Pages/odorizer.aspx">Odorizer</a></li>						</ul>					</li>				</ul>			</li>
+			<li><a href="../Admin/Waitinglist.aspx">Waiting List</a></li>
+			<li><a href="../Pages/DashboardAsetRegisterFC.aspx">Dashboard Aset Register</a></li>
+			
+		</ul>
+	</li>
+	<li id="n-gangguan"><span class="dir">Gangguan & Pemeliharaan</span>
+		<ul>
+			<li class="first"><span class="dir">Kalibrasi Aset</span>				<ul>					<li class="first"><a href="../Pages/K_Mano.aspx">Manometer</a></li>					<li><a href="../Pages/K_Meter.aspx">Meter</a></li>					<li><a href="../Pages/K_Termometer.aspx">Termometer</a></li>				</ul>			</li>
+			<li><span class="dir">Inspeksi Aset</span>
+				<ul>
+					<li class="first"><a href="../Pages/Valve.aspx">Valve</a></li>
+					<li><a href="../Pages/MRS.aspx">MRS</a></li>
+					<li><a href="../Pages/Katodik.aspx">Katodik</a></li>
+					<li><a href="../Pages/Jembatan.aspx">Jembatan</a></li>
+					<li><a href="../Pages/Kebocoran.aspx">Kebocoran</a></li>					<li><a href="../Pages/Jaringan.aspx">Patroli Jaringan</a></li>
+				</ul>
+			</li>
+			<li><a href="../Pages/SetupRegulator.aspx">Setup Regulator</a></li>
+			<li><span class="dir">Workshop Meter</span>
+				<ul>
+					<li class="first"><a href="../Pages/meterpenerimaan.aspx">Penerimaan Meter</a></li>
+					<li><a href="../Pages/meterperiksa.aspx">Pemeriksaan Meter</a></li>
+					<li><a href="../Pages/meterpasang.aspx">Perbaikan Meter</a></li>
+				</ul>
+			</li>
+			<li><a href="../Pages/dashboardredspotdaninspeksivalve.aspx">Dashboard Inspeksi dan Kondisi Valve dan Bak Valve</a></li>
+			<li><a href="../Pages/dashboardredspot.aspx">Dashboard Red Spot</a></li>
+		</ul>
+	</li>
+	<li id="n-movies"><span class="dir">Perencanaan &amp; Pengembangan Jaringan</span>
+		<ul>
+			<li class="first"><a href="../Pages/pipaprogress_en.aspx" >Pipa Progress</a></li>
+            <li ><span class="dir">Engineering</span>
+                <ul>
+                    <li><a href="../Pages/pipeline.aspx">Pipeline</a></li>
+					<li><a href="../Pages/pipeline.aspx">Beyond Pipeline</a></li>
+                </ul>
+            </li>
+		</ul>
+	</li>	<li id="n-shows"><span class="dir">Report</span>	<%--<a href="./" class="dir">Report</a>--%>		<ul>			<li class="first"><span class="dir">Laporan Teknik 1-5</span>				<ul>					<li class="first"><a href="../Report/DaftarStasiunOfftake.aspx">Daftar Offtake Stasiun Terpasang</a></li>					<li><a href="../Report/DataTeknisPipa.aspx">Data Teknis Pipa</a></li>					<li><a href="../report/DataTeknisMRSPelanggan.aspx">Data Teknis MR/S Pelanggan</a></li>					<li><a href="../Report/DataTeknisMSPelanggan.aspx">Data Teknis M/S Pelanggan</a></li>					<li><a href="../Report/DataTeknisMRSMSdanRSnonPelanggan.aspx">Data Teknis MR/S, M/S, dan R/S non Pelanggan</a></li>				</ul>			</li>			<li><span class="dir">Laporan Teknik 6-10</span>				<ul>					<li class="first"><a href="../report/DataTeknisMeterPelangganIndustriatauKomersialDanDistrik.aspx">Data Teknis Meter Pelanggan Industri/Komersial Dan Distrik</a></li>					<li><a href="../report/DataPenambahanPenguranganPipa.aspx">Data Penambahan/Pengurangan Pipa</a></li>					<li><a href="../report/DataPemasanganBaruMrsMsRs.aspx">Data Pemasangan Baru MR/S, M/S, R/S</a></li>					<li><a href="../report/DataPencabutanMrsMsDanRs.aspx">Data Pencabutan MR/S, M/S Dan R/S</a></li>					<li><a href="../report/DataPenambahanPencabutanPenggantianMeter.aspx">Data Penambahan/Pencabutan/Penggantian Meter</a></li>				</ul>			</li>			<li><span class="dir">Laporan Teknik 11-16</span>				<ul>					<li class="first"><a href="../report/DataInspeksiPemeriksaanMRSMSdanRS.aspx">Data Inspeksi/Pemeriksaan MR/S,M/S Dan R/S</a></li>					<li><a href="../report/InspeksiPemeriksaanValvedanBakValve.aspx">Inspeksi/Pemeriksaan Valve dan Bak Valve</a></li>					<li><a href="../report/InspeksiPemeriksaanSistemProteksiKatodik.aspx">Inspeksi/Pemeriksaan Sistem Poteksi Katodik</a></li>					<li><a href="../report/DataSurveyKebocoranJaringanPipa.aspx">Data Survey Kebocoran Jaringan Pipa</a></li>					<li><a href="../report/KegiatanPatroliJaringanPipa.aspx">Kegiatan Patroli Jaringan Pipa</a></li>					<li><a href="../report/PenambahanPenguranganPipaBajaYangDilindungiSistemProteksiKatodik.aspx">Data Penambahan/Pengurangan Pipa Baja Yang Dilindungi Sistem Proteksi Katodik</a></li>					<li><a href="../report/Jembatan.aspx">Laporan Inspeksi Jembatan</a></li>				</ul>			</li>			<li><span class="dir">Laporan Bulanan Workshop</span>			    <ul>			        <li><a href="../report/DataTeknisMeterworkshop.aspx">Data Pemeriksaan Meter</a></li>					<li><a href="../report/DataPerbaikanMeter.aspx">Data Perbaikan Meter</a></li>			    </ul>			</li>			<li><a href='../report/grafikproteksikatodikfc.aspx' title='GRAFIK PROTEKSI KATODIK'>Grafik Proteksi Katodik</a></li>			<li><a href="../pages/graphicmeter.aspx">Graphic Meter</a></li>			<li><a href="../Pages/CariDokument.aspx">Search Document</a></li>			<li><a href="../Report/SurveyKatodikTigaBulanTerakhir.aspx">Survey Katodik 3 Bulan Terakhir</a></li>		</ul>	</li>
+	
+	<% } %>
+	<% } %>
+	
+	<li id="n-logout"><a href="../logout.aspx">Logout</a></li></ul>
+</div>
+
+
+    
+        
+       <div id="main-content">
+           
+	           <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+	           </asp:contentplaceholder>
+           
+       </div>
+       <div id="footer">			&copy;2013 <a href="http://pgn.co.id">Perusahaan Gas Negara</a>		</div>
+   
+   </div>
+    </form>
+<%
+	}
+%>
+</body>
+</html>

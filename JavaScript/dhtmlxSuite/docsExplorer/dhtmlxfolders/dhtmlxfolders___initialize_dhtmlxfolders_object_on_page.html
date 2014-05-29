@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
+    dhtmlxfolders:initialize_dhtmlxfolders_object_on_page    [Skin test wiki]
+  </title></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Documentation homepage"></a>
+    <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
+
+    <div class="search-field">
+        <form action="http://dhtmlx.com/dhxdocs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>    </div>
+        <div class="buttons">
+                <a class="doc"></a>
+                <a title="DHTMLX Samples homepage" href="../samples.html" class="sample"/></a>
+        </div>
+     <!-- <div class="pagename">
+        [[<a href="#"  title="Backlinks">dhtmlxfolders:initialize_dhtmlxfolders_object_on_page</a>]]
+      </div>
+      <div class="logo">
+        <a href="/dhtmlx/_lab/wiki/doku.php"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">Skin test wiki</a>      </div>
+
+      <div class="clearer"></div>-->
+        
+    </div>
+
+    
+<!--   <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+                <form class="button btn_revs" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxfolders:initialize_dhtmlxfolders_object_on_page" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="recent" /><input type="hidden" name="id" value="dhtmlxfolders:initialize_dhtmlxfolders_object_on_page" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [R]" /></div></form>        <form action="http://dhtmlx.com/dhxdocs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div> -->
+
+<!--        <div class="breadcrumbs">
+      <span class="bchead">Trace:</span> <span class="bcsep">&raquo;</span> <span class="curid"><a href="/dhtmlx/_lab/wiki/doku.php?id=dhtmlxfolders:initialize_dhtmlxfolders_object_on_page"  class="breadcrumbs" title="dhtmlxfolders:initialize_dhtmlxfolders_object_on_page">initialize_dhtmlxfolders_object_on_page</a></span>    </div>
+    -->
+
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    
+<p>
+<div class='backlinks'><div class='backlink last_backlink'><img src="icons___file.gif"  class="media" alt="" /><a href="../index.html" class="wikilink1" title="start">Index</a></div><div class='arrow'></div><div class='backlink last_backlink'><img src="icons___folders.gif"  class="media" alt="" /><a href="index.html" class="wikilink1" title="dhtmlxfolders:toc">dhtmlxfolders</a></div><div class='arrow'></div><div class='backlink'><span class="curid"><a href="dhtmlxfolders___initialize_dhtmlxfolders_object_on_page.html" class="wikilink1" title="dhtmlxfolders:initialize_dhtmlxfolders_object_on_page"> Initialize dhtmlxFolders Object on Page </a></span></div></div>
+
+</p>
+
+<h2><a name="initialize_dhtmlxfolders_object_on_page" id="initialize_dhtmlxfolders_object_on_page">Initialize dhtmlxFolders Object on Page</a></h2>
+<div class="level2">
+
+<p>
+
+First of all you need to choose container for dhtmlxFolders object which will define width, height for it and its place on page. 
+Most useful <acronym title="HyperText Markup Language">HTML</acronym> object for these purposes is DIV element. It can be in any type of position - relative, absolute, static or fixed. 
+But some css attributes are mandatory for it: 
+</p>
+<ul>
+<li class="level1"><div class="li"> width:  in px or %;</div>
+</li>
+<li class="level1"><div class="li"> height:  in px or %;</div>
+</li>
+<li class="level1"><div class="li"> overflow: hidden.</div>
+</li>
+</ul>
+
+<p>
+
+It also should have id attribute.<br/>
+ So here is a sample of valid dhtmlxFolder container:
+
+</p>
+<pre class="code javascript">  <span class="sy0">&lt;</span>div id<span class="sy0">=</span><span class="st0">&quot;folders_container&quot;</span> style<span class="sy0">=</span><span class="st0">&quot;width:450px;height:450px;overflow:hidden;&quot;</span><span class="sy0">&gt;&lt;/</span>div<span class="sy0">&gt;</span></pre>
+<p>
+
+Having container you now can create dhtmlxFolders object and put it there. This can be done with a single script command:
+
+</p>
+<pre class="code javascript">  myFolders <span class="sy0">=</span> <span class="kw2">new</span> dhtmlxFolders<span class="br0">&#40;</span><span class="st0">&quot;folders_container&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+	
+Now, you have javascript object myFolders which has all functionality of dhtmlxFolders. You can define type of items you want to have in it and load data. We&#039;ll do this with a short set of script commands:	
+
+</p>
+<pre class="code javascript">  myFolders.<a href='dhtmlxfolders___api_method_dhtmlxfolders_setitemtype.html'><b><span class="me1">setItemType</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;type_name&quot;</span><span class="br0">&#41;</span>;
+  myFolders.<a href='dhtmlxfolders___api_method_dhtmlxfolders_setuserdata.html'><b><span class="me1">setUserData</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;name&quot;</span><span class="sy0">,</span><span class="st0">&quot;value&quot;</span><span class="br0">&#41;</span>
+  myFolders.<a href='dhtmlxfolders___api_method_dhtmlxfolders_loadxml.html'><b><span class="me1">loadXML</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;/path/to/xml_source.xml&quot;</span><span class="sy0">,</span><span class="st0">&quot;/path_to/itemtype_visualization/xsl_file.xsl&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+		
+setItemType method call  is necessary if you want to use some of predefined types (read chapter “Define items type using built-in types”) or switch from one type to another (read “Changing type dynamically” chapter).
+</p>
+
+<p>
+
+setUserData method sets name/value pairs which then can be used in <acronym title="Extensible Stylesheet Language">XSL</acronym> as xsl variables. You can pass path to icons or some other values this way.  If you use built-in or third party types you need to refer to the documentation to find out what variables should be set. Or look into xsl file to see what variables are used there. Userdata cab be set with script or in <acronym title="Extensible Markup Language">XML</acronym> (using userdata tag).
+</p>
+
+<p>
+loadXML method gets data provided in <acronym title="Extensible Markup Language">XML</acronym> format from server and populates dhtmlxFolders object with items.  As you can see it uses two arguments:
+</p>
+<ul>
+<li class="level1"><div class="li"> <acronym title="Extensible Markup Language">XML</acronym> file url. This can be either static <acronym title="Extensible Markup Language">XML</acronym> file or any other programming file which responses data in valid <acronym title="Extensible Markup Language">XML</acronym> format. (read “<acronym title="Extensible Markup Language">XML</acronym> format” chapter to know what <acronym title="Extensible Markup Language">XML</acronym> format is required by dhtmlxFolders)</div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> <acronym title="Extensible Stylesheet Language">XSL</acronym> file url. Each item type of “xml-xsl” kind has corresponding <acronym title="Extensible Stylesheet Language">XSL</acronym> used for formatting items. Built-in types has corresponding xsl files in codebase/types folder. All you need is to point dhtmlxFolders object there. For example ”../codebase/types/ftable.xsl” . If you use your own <acronym title="Extensible Stylesheet Language">XSL</acronym> file, point dhtmlxFolders to this file (read <a href="dhtmlxfolders___articles_xslbased.html.html" class="wikilink1" title="dhtmlxfolders:articles_xslbased.html">&quot;Define your own type&quot;</a> chapter to know how to create your own visualization <acronym title="Extensible Stylesheet Language">XSL</acronym> files files)</div>
+</li>
+</ul>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     <!-- <div class="doc">
+        dhtmlxfolders/initialize_dhtmlxfolders_object_on_page.txt &middot; Last modified: 2009/07/30 12:56 (external edit)      </div>
+    </div>-->
+
+   
+    <!--<div class="bar" id="bar__bottom">-->
+      <!--<div class="bar-left" id="bar__bottomleft">-->
+        <!---->
+        <!--<form class="button btn_revs" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxfolders:initialize_dhtmlxfolders_object_on_page" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>-->
+      <!--</div>-->
+      <!--<div class="bar-right" id="bar__bottomright">-->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!--<form class="button btn_login" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="sectok" value="9bc34b491b3b9aeea64ddf3ea431ed25" /><input type="hidden" name="id" value="dhtmlxfolders:initialize_dhtmlxfolders_object_on_page" /><input type="submit" value="Login" class="button" title="Login" /></div></form>-->
+        <!--<form class="button btn_index" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="index" /><input type="hidden" name="id" value="dhtmlxfolders:initialize_dhtmlxfolders_object_on_page" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [X]" /></div></form>-->
+        <!--<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;-->
+      <!--</div>-->
+      <!--<div class="clearer"></div>-->
+    <!--</div>-->
+
+  </div>
+
+  
+
+</div>
+
+<div class="footerinc">
+
+
+</div>
+
+<div class="no"><img src="/dhtmlx/_lab/wiki/lib/exe/indexer.php?id=dhtmlxfolders%3Ainitialize_dhtmlxfolders_object_on_page&amp;1257950527" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2009 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

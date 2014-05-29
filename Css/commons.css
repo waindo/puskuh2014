@@ -1,0 +1,84 @@
+﻿body {
+}
+/*
+a
+{
+	font-family: Courier New;
+	font-size: 0.9em;
+	color: #dd3333;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+*/
+span.hedr
+{
+	font: 65.5% Arial, Helvetica, sans-serif;color:White;
+}
+.lbl
+{
+    font-family: Tahoma;
+	font-size: 11px;
+}
+/*
+a:hover
+{
+	color: #5a5a5a;
+}
+*/
+div#kiri
+{
+	border-bottom: 1px solid #ffffff;
+}
+div#kiri h2
+{
+	color: #0033DD;
+	font-size: 40px;
+	font-family: serif;
+	text-align: left;
+	padding-left: 50px;
+	background: white url('../App_Themes/Blue_Bridge/images/TitleBannerKiri.jpg') repeat scroll;
+}
+input, select
+{
+	font-size: 11px;
+    margin-left: 0px;
+	height: 22px;
+}
+div#login2
+{
+	height: 200px;
+	margin: 5% 35%;
+	width: 30%;
+	-moz-border-radius: 5px 5px 0 0;
+	background-color: gray;
+	border-color: gray;
+}
+div#loginTitle
+{
+	-moz-border-radius: 5px 5px 0 0;
+	height: 12%;
+	width: 100%;
+	background-color: #999999;
+	border-color: gray;
+	border-style: solid;
+	border-width: thin;
+}
+div#loginTitle h4
+{
+	margin: 0 40%;
+	letter-spacing: 5px;
+}
+div#loginContent
+{
+	border-color: gray;
+	border-style: solid;
+	border-width: thin;
+	background-color: #eeeeee;
+	height: 88%;
+	width: 100%;
+}
+div#loginContent table
+{
+	margin-top: 5%;
+	margin-left: 16%;
+}

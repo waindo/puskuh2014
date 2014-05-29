@@ -1,0 +1,549 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
+    dhtmlxlayout:items_manipulations    [Skin test wiki]
+  </title></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Documentation homepage"></a>
+    <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
+
+    <div class="search-field">
+        <form action="http://dhtmlx.com/dhxdocs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>    </div>
+        <div class="buttons">
+                <a class="doc"></a>
+                <a title="DHTMLX Samples homepage" href="../samples.html" class="sample"/></a>
+        </div>
+     <!-- <div class="pagename">
+        [[<a href="#"  title="Backlinks">dhtmlxlayout:items_manipulations</a>]]
+      </div>
+      <div class="logo">
+        <a href="/dhtmlx/_lab/wiki/doku.php"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">Skin test wiki</a>      </div>
+
+      <div class="clearer"></div>-->
+        
+    </div>
+
+    
+<!--   <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+                <form class="button btn_revs" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxlayout:items_manipulations" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="recent" /><input type="hidden" name="id" value="dhtmlxlayout:items_manipulations" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [R]" /></div></form>        <form action="http://dhtmlx.com/dhxdocs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div> -->
+
+<!--        <div class="breadcrumbs">
+      <span class="bchead">Trace:</span> <span class="bcsep">&raquo;</span> <span class="curid"><a href="/dhtmlx/_lab/wiki/doku.php?id=dhtmlxlayout:items_manipulations"  class="breadcrumbs" title="dhtmlxlayout:items_manipulations">items_manipulations</a></span>    </div>
+    -->
+
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#items_manipulations" class="toc">Items Manipulations</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#items_accessing" class="toc">Items Accessing</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#id-index_interconnection" class="toc">Id-Index Interconnection</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#iterator" class="toc">Iterator</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#header_manipulations" class="toc">Header Manipulations</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#item_s_expanding_collapsing" class="toc">Item&#039;s Expanding/Collapsing</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#window_s_docking_item_s_undocking" class="toc">Window&#039;s Docking/Item&#039;s Undocking</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#item_s_sizing" class="toc">Item&#039;s Sizing</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#attaching_object" class="toc">Attaching Object</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#attaching_url" class="toc">Attaching URL</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#fixing_cells_sizes" class="toc">Fixing Cells Sizes</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#progress_control" class="toc">Progress Control</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<p>
+<div class='backlinks'><div class='backlink last_backlink'><img src="icons___file.gif"  class="media" alt="" /><a href="../index.html" class="wikilink1" title="start">Index</a></div><div class='arrow'></div><div class='backlink last_backlink'><img src="icons___layout.gif"  class="media" alt="" /><a href="index.html" class="wikilink1" title="dhtmlxlayout:toc">dhtmlxlayout</a></div><div class='arrow'></div><div class='backlink'><span class="curid"><a href="dhtmlxlayout___items_manipulations.html" class="wikilink1" title="dhtmlxlayout:items_manipulations">  Items Manipulations  </a></span></div></div>
+
+</p>
+
+<h2><a name="items_manipulations" id="items_manipulations">Items Manipulations</a></h2>
+<div class="level2">
+
+<p>
+The following types of items manipulations are available for dhtmlxLayout users:
+</p>
+<ul>
+<li class="level1"><div class="li">  Items Accessing;</div>
+</li>
+<li class="level1"><div class="li">  Id-Index Interconnection; </div>
+</li>
+<li class="level1"><div class="li">  Iterator;</div>
+</li>
+<li class="level1"><div class="li">  Header Manipulation; </div>
+</li>
+<li class="level1"><div class="li">  Item&#039;s Expanding/Collapsing;</div>
+</li>
+<li class="level1"><div class="li">  Item&#039;s Undocking to window/Window&#039;s Docking to items; </div>
+</li>
+<li class="level1"><div class="li">  Item&#039;s Sizing;</div>
+</li>
+<li class="level1"><div class="li">  Attaching Object;</div>
+</li>
+<li class="level1"><div class="li">  Attaching <acronym title="Uniform Resource Locator">URL</acronym>;</div>
+</li>
+<li class="level1"><div class="li">  Fixing Cells Sizes;</div>
+</li>
+<li class="level1"><div class="li">  Progress Control.</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a name="items_accessing" id="items_accessing">Items Accessing</a></h3>
+<div class="level3">
+
+<p>
+Here we&#039;d like to draw your attention to the following ways of items accessing:
+</p>
+<ul>
+<li class="level1"><div class="li">  Through Layout items&#039; indexes;</div>
+</li>
+<li class="level1"><div class="li">  Through Layout items&#039; ids.</div>
+</li>
+</ul>
+
+<p>
+
+Items can be referred to as a collection of Items, where [0] is the zero-based index of a certain item. All the items have their own indexes starting with 0.
+</p>
+
+<p>
+In all the below mentioned snippets, however, another variant of items accessing is used: through Layout items&#039; ids. All the items in the Layout have ids that go in alphabetical succession starting with “a”. In this case items are referred to as cells.
+Thus, we can access any Layout&#039;s item in two following ways:
+
+</p>
+<pre class="code javascript">  <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+      <span class="kw2">var</span> <span class="kw1">item</span> <span class="sy0">=</span> dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>;
+      <span class="co1">// or</span>
+      <span class="kw2">var</span> <span class="kw1">item</span> <span class="sy0">=</span> dhxLayout.<span class="me1">items</span><span class="br0">&#91;</span>0<span class="br0">&#93;</span>;
+  <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+<p>
+
+In the below mentioned code samples we&#039;ll use item with the id “a” as an example.
+</p>
+
+<p>
+
+Each method will return item object.
+</p>
+
+</div>
+
+<h3><a name="id-index_interconnection" id="id-index_interconnection">Id-Index Interconnection</a></h3>
+<div class="level3">
+
+<p>
+Layout item&#039;s ids and indexes are interrelated in such a way that one can be easily got with the help of another:
+</p>
+<pre class="code javascript">  <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+      <span class="kw2">var</span> index <span class="sy0">=</span> dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_getindexbyid.html'><b><span class="me1">getIndexById</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>; <span class="co1">// we'll get 0</span>
+      <span class="kw2">var</span> id <span class="sy0">=</span> dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_getidbyindex.html'><b><span class="me1">getIdByIndex</span></b></a><span class="br0">&#40;</span>0<span class="br0">&#41;</span>; <span class="co1">// we'll get &quot;a&quot;</span>
+  <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+</div>
+
+<h3><a name="iterator" id="iterator">Iterator</a></h3>
+<div class="level3">
+
+<p>
+Method forEachItem() calls user-defined function for every existing item passing item object into it. Using iterator can be very useful in case the user wants all the items to be subjects of the same changes.
+For example, the user can use hideHeader() method to hide headers of all items in the Layout:
+</p>
+<pre class="code javascript">  <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+      <span class="co1">// calling iterator</span>
+      dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_foreachitem.html'><b><span class="me1">forEachItem</span></b></a><span class="br0">&#40;</span><span class="kw2">function</span><span class="br0">&#40;</span><span class="kw1">item</span><span class="br0">&#41;</span><span class="br0">&#123;</span>
+          <span class="co1">// actions, for example:         </span>
+          <span class="kw1">item</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_hideheader.html'><b><span class="me1">hideHeader</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+       <span class="br0">&#125;</span><span class="br0">&#41;</span>;
+  <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span>
+&nbsp;
+  <span class="co1">//or</span>
+&nbsp;
+  <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+      <span class="kw2">function</span> doItemAction<span class="br0">&#40;</span><span class="kw1">item</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+          <span class="co1">// actions, for example:</span>
+          <span class="kw1">item</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_hideheader.html'><b><span class="me1">hideHeader</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+      <span class="br0">&#125;</span>
+      <span class="co1">// calling iterator</span>
+      dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_foreachitem.html'><b><span class="me1">forEachItem</span></b></a><span class="br0">&#40;</span>doItemAction<span class="br0">&#41;</span>;
+  <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+</div>
+
+<h3><a name="header_manipulations" id="header_manipulations">Header Manipulations</a></h3>
+<div class="level3">
+
+<p>
+The header is situated at the top of the item. This header displays functional buttons that are used to manipulate items, and it also displays items&#039; title texts.
+Header manipulations include:
+</p>
+<ul>
+<li class="level1"><div class="li">  Hiding/showing the header;</div>
+</li>
+<li class="level1"><div class="li">  Getting header&#039;s current state;</div>
+</li>
+<li class="level1"><div class="li">  Setting header&#039;s text;</div>
+</li>
+<li class="level1"><div class="li">  Getting header&#039;s text.</div>
+</li>
+</ul>
+
+<p>
+
+The header can be easily hidden with the help of hideHeader() method:
+</p>
+<pre class="code javascript">      dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_hideheader.html'><b><span class="me1">hideHeader</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+In order to show the header the following method is used:
+
+</p>
+<pre class="code javascript">      dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_showheader.html'><b><span class="me1">showHeader</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+When the user wants to get the current state of a certain header, he should use isHeaderVisible() method. If the method returns true, the header is visible, and vice versa:
+
+</p>
+<pre class="code javascript">      <span class="kw2">var</span> isVisible <span class="sy0">=</span> dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_isheadervisible.html'><b><span class="me1">isHeaderVisible</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>; <span class="co1">// returns true|false;</span></pre>
+<p>
+
+By default, the header contains text of the item id. To set/change text for the header, the following code should be used:
+
+</p>
+<pre class="code javascript">      dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_settext.html'><b><span class="me1">setText</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;New Text&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+To get header&#039;s text, the following code should be used:
+
+</p>
+<pre class="code javascript">      <span class="kw2">var</span> text <span class="sy0">=</span> dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_gettext.html'><b><span class="me1">getText</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h3><a name="item_s_expanding_collapsing" id="item_s_expanding_collapsing">Item&#039;s Expanding/Collapsing</a></h3>
+<div class="level3">
+
+<p>
+Let&#039;s look at some general behavior of items in the Layout:
+</p>
+
+<p>
+If the last item visible in one row/column becomes collapsed, the nearest collapsed item will be expanded instead. The component expands either the nearest left item or the nearest right item (if there is no nearest left one). In other words, if there are two or more items in one row/column, at least one of them will be always held expanded.
+</p>
+
+<p>
+If the last item visible in one row/column becomes collapsed, and there is at least one Undocked item in the layout, one of the Undocked items will be docked and will stay expanded.
+</p>
+
+<p>
+In order to expand an item from the script, the user should write the following line of code:
+
+</p>
+<pre class="code javascript">  <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+      dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_expand.html'><b><span class="me1">expand</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+  <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+<p>
+
+There is also a method that is aimed at collapsing an item:
+
+</p>
+<pre class="code javascript">  <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+      dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_collapse.html'><b><span class="me1">collapse</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+  <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+</div>
+
+<h3><a name="window_s_docking_item_s_undocking" id="window_s_docking_item_s_undocking">Window&#039;s Docking/Item&#039;s Undocking</a></h3>
+<div class="level3">
+
+<p>
+Any item in dhtmlxLayout can be easily Undocked to a window - extracted from the single layout in order to be displayed separately in a window. In v.1.0 there is no possibility to dock item content to another item - just dock back. The user should write the following in order to Undock an item with <acronym title="Application Programming Interface">API</acronym> method:
+
+</p>
+<pre class="code javascript">  <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+      dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_undock.html'><b><span class="me1">undock</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+  <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+<p>
+
+An undocked window can be Docked back - made a part of the single layout again - in the following way:
+
+</p>
+<pre class="code javascript">  <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+      dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_dock.html'><b><span class="me1">dock</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+  <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+</div>
+
+<h3><a name="item_s_sizing" id="item_s_sizing">Item&#039;s Sizing</a></h3>
+<div class="level3">
+
+<p>
+There is the possibility to resize any item in the Layout. However, there are some limitations in item&#039;s sizing that users should know:
+</p>
+<ul>
+<li class="level1"><div class="li">  If there is only one item in a row, it is impossible to set width for this item;</div>
+</li>
+<li class="level1"><div class="li">  If there is only one item in a column, it is impossible to set height for this item;</div>
+</li>
+<li class="level1"><div class="li">  The system checks all width/height values set: in case of any invalid values usage, the system will just ignore them.</div>
+</li>
+</ul>
+
+<p>
+
+There are separate methods for setting item&#039;s width and height:
+
+</p>
+<pre class="code javascript">  <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+      dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_setwidth.html'><b><span class="me1">setWidth</span></b></a><span class="br0">&#40;</span><span class="nu0">200</span><span class="br0">&#41;</span>;
+      dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_setheight.html'><b><span class="me1">setHeight</span></b></a><span class="br0">&#40;</span><span class="nu0">200</span><span class="br0">&#41;</span>;
+  <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+<p>
+
+Input parameters the user should specify are item&#039;s width and height values.
+</p>
+
+<p>
+Current item&#039;s width and height can be easily got in the following way:
+
+</p>
+<pre class="code javascript">  <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+      <span class="kw2">var</span> width <span class="sy0">=</span> dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_getwidth.html'><b><span class="me1">getWidth</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+      <span class="kw2">var</span> height <span class="sy0">=</span> dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_getheight.html'><b><span class="me1">getHeight</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+  <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+</div>
+
+<h3><a name="attaching_object" id="attaching_object">Attaching Object</a></h3>
+<div class="level3">
+
+<p>
+
+If the user wants to attach an object to a certain Layout&#039;s item, he should first create this object on page.
+</p>
+
+<p>
+For example, we create a &lt;div&gt; element with id “objId” and with some text inside it. Then we just use the following line of code to attach this object we&#039;ve just created to a Layout item:
+</p>
+<pre class="code javascript">    <span class="sy0">&lt;</span>div id<span class="sy0">=</span><span class="st0">&quot;objId&quot;</span><span class="sy0">&gt;</span>
+        Some text
+    <span class="sy0">&lt;/</span>div<span class="sy0">&gt;</span>
+    <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+        dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_attachobject.html'><b><span class="me1">attachObject</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;objId&quot;</span><span class="br0">&#41;</span>;
+        <span class="co1">// or</span>
+        <span class="kw2">var</span> obj <span class="sy0">=</span> document.<span class="me1">getElementById</span><span class="br0">&#40;</span><span class="st0">&quot;objId&quot;</span><span class="br0">&#41;</span>;
+        dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_attachobject.html'><b><span class="me1">attachObject</span></b></a><span class="br0">&#40;</span>obj<span class="br0">&#41;</span>;
+    <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+</div>
+
+<h4><a name="object_size_handling" id="object_size_handling">Object Size Handling</a></h4>
+<div class="level4">
+
+<p>
+
+By default, panels have overflow:hidden style.
+</p>
+
+<p>
+In case the panel is not able to display the whole object, the following style should be specified for the object:
+</p>
+<pre class="code javascript">    <span class="sy0">&lt;</span>div id<span class="sy0">=</span><span class="st0">&quot;objId&quot;</span> style<span class="sy0">=</span><span class="st0">&quot;width:100%;height:100%;overflow:auto;...&quot;</span><span class="sy0">&gt;</span></pre>
+<p>
+Now the panel will display the scroll bar in case the object does not fit panel&#039;s size.
+</p>
+
+</div>
+
+<h3><a name="attaching_url" id="attaching_url">Attaching URL</a></h3>
+<div class="level3">
+
+<p>
+
+Sometimes the user needs to display a web page in a Layout&#039;s item. attachURL() method is used for this purpose in the following way:
+</p>
+<pre class="code javascript">  <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+      dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_attachurl.html'><b><span class="me1">attachURL</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;http://www.google.com/&quot;</span><span class="br0">&#41;</span>;
+  <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+</div>
+
+<h4><a name="accessing_inner_content" id="accessing_inner_content">Accessing Inner Content</a></h4>
+<div class="level4">
+
+<p>
+
+Any object on the external page attached with attachURL() method can be accessed like this:
+
+</p>
+<ul>
+<li class="level1"><div class="li">  Page inner.html</div>
+</li>
+</ul>
+<pre class="code javascript">  ...
+  <span class="sy0">&lt;</span>div id<span class="sy0">=</span><span class="st0">&quot;A&quot;</span><span class="sy0">&gt;</span>...<span class="sy0">&lt;/</span>div<span class="sy0">&gt;</span>
+      <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+          <span class="kw2">function</span> myFunc<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+               ...
+          <span class="br0">&#125;</span>
+      <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span>
+  ...</pre><ul>
+<li class="level1"><div class="li">  Page index.html</div>
+</li>
+</ul>
+<pre class="code javascript">    <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+            <span class="kw2">var</span> dhxLayout <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXLayoutObject<span class="br0">&#40;</span>...<span class="br0">&#41;</span>;
+            ...
+            <span class="me1">dhxLayout</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_attachurl.html'><b><span class="me1">attachURL</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;inner.html&quot;</span><span class="br0">&#41;</span>;
+            <span class="co1">// accessing &lt;div id=&quot;A&quot;&gt;</span>
+            <span class="kw1">if</span> <span class="br0">&#40;</span>_isIE<span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>._frame.<span class="me1">contentWindow</span>.<span class="me1">document</span>.<span class="me1">getElementById</span><span class="br0">&#40;</span><span class="st0">&quot;A&quot;</span><span class="br0">&#41;</span>...
+            <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+                dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>._frame.<span class="me1">contentDocument</span>.<span class="me1">getElementById</span><span class="br0">&#40;</span><span class="st0">&quot;A&quot;</span><span class="br0">&#41;</span>...
+            <span class="br0">&#125;</span>
+            <span class="co1">// calling function from inner.html</span>
+            dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>._frame.<span class="me1">contentWindow</span>.<span class="me1">myFunc</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+</div>
+
+<h4><a name="panel_accessing_from_attached_url" id="panel_accessing_from_attached_url">Panel Accessing from Attached URL</a></h4>
+<div class="level4">
+
+<p>
+
+If the user needs to do some action with a panel from the attached <acronym title="Uniform Resource Locator">URL</acronym> (for example, close it by clicking some button on page), he should write the following code lines in the attached external page:
+</p>
+<pre class="code javascript">      <span class="sy0">&lt;</span>input type<span class="sy0">=</span><span class="st0">&quot;button&quot;</span> value<span class="sy0">=</span><span class="st0">&quot;collapse cell&quot;</span> onclick<span class="sy0">=</span><span class="st0">&quot;collapseCell();&quot;</span><span class="sy0">&gt;</span> <span class="co1">// create a button</span>
+&nbsp;
+      <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+           <span class="kw2">function</span> collapseCell<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+               parent.<span class="me1">dhxLayout</span>.<span class="me1">cells</span><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_collapse.html'><b><span class="me1">collapse</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>; <span class="co1">// collapse cell &quot;a&quot;</span>
+           <span class="br0">&#125;</span>
+      <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+<p>
+It should be noted that variable dhxLayout should be created as a global one (in our main dhtmlxLayout script) in order to be seen by the script in the attached external page.
+</p>
+
+</div>
+
+<h3><a name="fixing_cells_sizes" id="fixing_cells_sizes">Fixing Cells Sizes</a></h3>
+<div class="level3">
+
+<p>
+
+If the user needs to fix size of a certain Layout&#039;s cell, there&#039;s a method that does the exact thing:
+</p>
+<pre class="code javascript">    <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+        dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutpanel_fixsize.html'><b><span class="me1">fixSize</span></b></a><span class="br0">&#40;</span><span class="kw2">true</span><span class="sy0">,</span> <span class="kw2">false</span><span class="br0">&#41;</span>;
+    <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+<p>
+The first parameter is responsible for resizing cell&#039;s width, and the second one - for resizing cell&#039;s height. If the user sets two parameters to true, the user won&#039;t be able to resize the item horizontally and vertically.
+</p>
+
+</div>
+
+<h3><a name="progress_control" id="progress_control">Progress Control</a></h3>
+<div class="level3">
+
+<p>
+
+<img src="/dhtmlx/_lab/wiki/lib/images/smileys/icon_exclaim.gif" class="middle" alt=":!:" />
+</p>
+
+<p>
+Progress control is an indicator of state, you may show/hide it, depending on state of cell&#039;s content. Progress can be applied to whole layout or just to any cell.
+</p>
+
+<p>
+Here is a code for whole layout&#039;s progress:
+</p>
+<pre class="code javascript">    <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+        <span class="co1">// turning progress on</span>
+        dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_progresson.html'><b><span class="me1">progressOn</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+        <span class="co1">// turning progress off</span>
+        dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_progressoff.html'><b><span class="me1">progressOff</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>; 
+    <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+<p>
+
+Here is a code for cells&#039; progres:
+</p>
+<pre class="code javascript">    <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+        <span class="co1">// turning progress on</span>
+        dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_progresson.html'><b><span class="me1">progressOn</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+        <span class="co1">// turning progress off</span>
+        dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span>.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_progressoff.html'><b><span class="me1">progressOff</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>; 
+    <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     <!-- <div class="doc">
+        dhtmlxlayout/items_manipulations.txt &middot; Last modified: 2009/07/30 20:22 (external edit)      </div>
+    </div>-->
+
+   
+    <!--<div class="bar" id="bar__bottom">-->
+      <!--<div class="bar-left" id="bar__bottomleft">-->
+        <!---->
+        <!--<form class="button btn_revs" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxlayout:items_manipulations" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>-->
+      <!--</div>-->
+      <!--<div class="bar-right" id="bar__bottomright">-->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!--<form class="button btn_login" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="sectok" value="df963f4de3122a214d5eb70b7e6eeca1" /><input type="hidden" name="id" value="dhtmlxlayout:items_manipulations" /><input type="submit" value="Login" class="button" title="Login" /></div></form>-->
+        <!--<form class="button btn_index" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="index" /><input type="hidden" name="id" value="dhtmlxlayout:items_manipulations" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [X]" /></div></form>-->
+        <!--<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;-->
+      <!--</div>-->
+      <!--<div class="clearer"></div>-->
+    <!--</div>-->
+
+  </div>
+
+  
+
+</div>
+
+<div class="footerinc">
+
+
+</div>
+
+<div class="no"><img src="/dhtmlx/_lab/wiki/lib/exe/indexer.php?id=dhtmlxlayout%3Aitems_manipulations&amp;1257949847" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2009 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

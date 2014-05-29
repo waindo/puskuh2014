@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
+    dhtmlxlayout:from_20_to_25    [Skin test wiki]
+  </title></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Documentation homepage"></a>
+    <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
+
+    <div class="search-field">
+        <form action="http://dhtmlx.com/dhxdocs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>    </div>
+        <div class="buttons">
+                <a class="doc"></a>
+                <a title="DHTMLX Samples homepage" href="../samples.html" class="sample"/></a>
+        </div>
+     <!-- <div class="pagename">
+        [[<a href="#"  title="Backlinks">dhtmlxlayout:from_20_to_25</a>]]
+      </div>
+      <div class="logo">
+        <a href="/dhtmlx/_lab/wiki/doku.php"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">Skin test wiki</a>      </div>
+
+      <div class="clearer"></div>-->
+        
+    </div>
+
+    
+<!--   <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+                <form class="button btn_revs" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxlayout:from_20_to_25" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="recent" /><input type="hidden" name="id" value="dhtmlxlayout:from_20_to_25" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [R]" /></div></form>        <form action="http://dhtmlx.com/dhxdocs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div> -->
+
+<!--        <div class="breadcrumbs">
+      <span class="bchead">Trace:</span> <span class="bcsep">&raquo;</span> <span class="curid"><a href="/dhtmlx/_lab/wiki/doku.php?id=dhtmlxlayout:from_20_to_25"  class="breadcrumbs" title="dhtmlxlayout:from_20_to_25">from_20_to_25</a></span>    </div>
+    -->
+
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    
+
+
+<h3><a name="migration_from_2.0_to_2.5" id="migration_from_2.0_to_2.5">Migration from 2.0 to 2.5</a></h3>
+<div class="level3">
+
+</div>
+
+<h4><a name="dhtmlxwindows_support_no_more_needed" id="dhtmlxwindows_support_no_more_needed">1. dhtmlxWindows support no more needed.</a></h4>
+<div class="level4">
+
+<p>
+
+If you do not plan to use dhtmlxWindows on your page, we recommend you to remove links to dhtmlxwindows.js (it no more needed):
+</p>
+<pre class="code html4strict">    <span class="sc2">&lt;<a href="http://december.com/html/4/element/link.html"><span class="kw2">link</span></a> <span class="kw3">rel</span><span class="sy0">=</span><span class="st0">&quot;stylesheet&quot;</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;text/css&quot;</span> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">&quot;../../../dhtmlxWindows/codebase/dhtmlxwindows.css&quot;</span>&gt;</span>
+    <span class="sc2">&lt;<a href="http://december.com/html/4/element/link.html"><span class="kw2">link</span></a> <span class="kw3">rel</span><span class="sy0">=</span><span class="st0">&quot;stylesheet&quot;</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;text/css&quot;</span> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">&quot;../../../dhtmlxWindows/codebase/skins/dhtmlxwindows_dhx_blue.css&quot;</span>&gt;</span>
+    <span class="sc2">&lt;<a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">&quot;../../../dhtmlxWindows/codebase/dhtmlxwindows.js&quot;</span>&gt;&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a>&gt;</span></pre>
+<p>
+This is recommended way to getting more performance.
+</p>
+
+</div>
+
+<h4><a name="container_module" id="container_module">2. Container module.</a></h4>
+<div class="level4">
+
+<p>
+
+Container is a common module used in layout, windows, accordion, tabbar.
+</p>
+
+<p>
+Just add
+</p>
+<pre class="code html4strict">      <span class="sc2">&lt;<a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a> <span class="kw3">src</span><span class="sy0">=</span><span class="st0">&quot;codebase/dhtmlxcontainer.js&quot;</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;text/javascript&quot;</span> <span class="kw3">charset</span><span class="sy0">=</span><span class="st0">&quot;utf-8&quot;</span>&gt;&lt;<span class="sy0">/</span><a href="http://december.com/html/4/element/script.html"><span class="kw2">script</span></a>&gt;</span></pre>
+<p>
+dhtmlxLayout will no work without it.
+</p>
+
+</div>
+
+<h4><a name="skin_autodetect_functionality" id="skin_autodetect_functionality">3. Skin autodetect functionality.</a></h4>
+<div class="level4">
+
+<p>
+
+By the default skin is dhx_skyblue (the new one in 2.5 version), but you also can use old dhx skin, dhx_blue and dhx_black.
+</p>
+
+<p>
+Skin autodetection means detect and set corresponding skin by the layout itself depending on attached css skin file.
+</p>
+
+<p>
+To set not default skin you shoyuld pass corresponding skin name as 3-rd argument into layout&#039;s constructor (also change skin on-the-fly feature appears in 2.5 version).
+</p>
+
+<p>
+But now it no needed to set skin to layout. Skin will inherit to all attached components in the layout.
+</p>
+
+<p>
+Just include needed skin css
+</p>
+<pre class="code html4strict">    <span class="sc2">&lt;<a href="http://december.com/html/4/element/link.html"><span class="kw2">link</span></a> <span class="kw3">rel</span><span class="sy0">=</span><span class="st0">&quot;stylesheet&quot;</span> <span class="kw3">type</span><span class="sy0">=</span><span class="st0">&quot;text/css&quot;</span> <span class="kw3">href</span><span class="sy0">=</span><span class="st0">&quot;codebase/skins/dhtmlxlayout_dhx_blue.css&quot;</span>&gt;</span></pre>
+<p>
+And init layout with 2 arguments
+</p>
+<pre class="code javascript">    <span class="kw2">var</span> dhxLayout <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXLayoutObject<span class="br0">&#40;</span>document.<span class="me1">body</span><span class="sy0">,</span> <span class="st0">&quot;3L&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+And layout will automatically set skin to “dhx_blue” to itself and all attached components.
+
+</p>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     <!-- <div class="doc">
+        dhtmlxlayout/from_20_to_25.txt &middot; Last modified: 2009/09/28 19:14 (external edit)      </div>
+    </div>-->
+
+   
+    <!--<div class="bar" id="bar__bottom">-->
+      <!--<div class="bar-left" id="bar__bottomleft">-->
+        <!---->
+        <!--<form class="button btn_revs" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxlayout:from_20_to_25" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>-->
+      <!--</div>-->
+      <!--<div class="bar-right" id="bar__bottomright">-->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!--<form class="button btn_login" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="sectok" value="a78d986ecc81c7bca3dcae363d6bc13a" /><input type="hidden" name="id" value="dhtmlxlayout:from_20_to_25" /><input type="submit" value="Login" class="button" title="Login" /></div></form>-->
+        <!--<form class="button btn_index" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="index" /><input type="hidden" name="id" value="dhtmlxlayout:from_20_to_25" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [X]" /></div></form>-->
+        <!--<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;-->
+      <!--</div>-->
+      <!--<div class="clearer"></div>-->
+    <!--</div>-->
+
+  </div>
+
+  
+
+</div>
+
+<div class="footerinc">
+
+
+</div>
+
+<div class="no"><img src="/dhtmlx/_lab/wiki/lib/exe/indexer.php?id=dhtmlxlayout%3Afrom_20_to_25&amp;1257949840" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2009 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

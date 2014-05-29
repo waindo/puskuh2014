@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
+    dhtmlxfolders:xml_format    [Skin test wiki]
+  </title></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Documentation homepage"></a>
+    <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
+
+    <div class="search-field">
+        <form action="http://dhtmlx.com/dhxdocs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>    </div>
+        <div class="buttons">
+                <a class="doc"></a>
+                <a title="DHTMLX Samples homepage" href="../samples.html" class="sample"/></a>
+        </div>
+     <!-- <div class="pagename">
+        [[<a href="#"  title="Backlinks">dhtmlxfolders:xml_format</a>]]
+      </div>
+      <div class="logo">
+        <a href="/dhtmlx/_lab/wiki/doku.php"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">Skin test wiki</a>      </div>
+
+      <div class="clearer"></div>-->
+        
+    </div>
+
+    
+<!--   <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+                <form class="button btn_revs" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxfolders:xml_format" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="recent" /><input type="hidden" name="id" value="dhtmlxfolders:xml_format" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [R]" /></div></form>        <form action="http://dhtmlx.com/dhxdocs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div> -->
+
+<!--        <div class="breadcrumbs">
+      <span class="bchead">Trace:</span> <span class="bcsep">&raquo;</span> <span class="curid"><a href="/dhtmlx/_lab/wiki/doku.php?id=dhtmlxfolders:xml_format"  class="breadcrumbs" title="dhtmlxfolders:xml_format">xml_format</a></span>    </div>
+    -->
+
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    
+<p>
+<div class='backlinks'><div class='backlink last_backlink'><img src="icons___file.gif"  class="media" alt="" /><a href="../index.html" class="wikilink1" title="start">Index</a></div><div class='arrow'></div><div class='backlink last_backlink'><img src="icons___folders.gif"  class="media" alt="" /><a href="index.html" class="wikilink1" title="dhtmlxfolders:toc">dhtmlxfolders</a></div><div class='arrow'></div><div class='backlink'><span class="curid"><a href="dhtmlxfolders___xml_format.html" class="wikilink1" title="dhtmlxfolders:xml_format">  XML format </a></span></div></div>
+
+</p>
+
+<h2><a name="xml_format" id="xml_format">XML format</a></h2>
+<div class="level2">
+
+<p>
+
+As far as dhtmlxFolders can display any kind of data which can be presented through <acronym title="HyperText Markup Language">HTML</acronym>, <acronym title="Extensible Markup Language">XML</acronym> can contain any data and its format can be of any kind. But if you use built-in or third party types you have to follow <acronym title="Extensible Markup Language">XML</acronym> format required by those types. In appendix you can find a summary table of available types and corresponding <acronym title="Extensible Markup Language">XML</acronym> format. 
+</p>
+
+<p>
+You need to understand that xml structure should be defined based not only on exact necessities of the type (what information is shown by each item), but also on some additional purposes - like ordering by different property values (even if these properties are invisible), showing information out of dhtmlxFolders object (like showing additional information for selected item). Also <acronym title="Extensible Markup Language">XML</acronym> structure can be defined taking into account the possible changing of type without reloading the data. For example when files list in file browser is shown as icons or as thumbnails. 
+</p>
+
+<p>
+Talking about <acronym title="Extensible Markup Language">XML</acronym> we do not mean only static xml files. In most cases not static content is used. <acronym title="Extensible Markup Language">XML</acronym> content can be created dynamically based on database data or file system (if you need to display real file system structure) using any server-side programming language.  Common requirements for xml produced by server side language:	
+</p>
+<ul>
+<li class="level1"><div class="li"> Response content-type must be text/xml or application/xhtml+xml;</div>
+</li>
+<li class="level1"><div class="li"> There shouldn&#039;t be any spaces or other content before xml declaration tag (same requirement is for static xml files).</div>
+</li>
+</ul>
+
+</div>
+
+<h3><a name="php_example_of_creation_of_correct_header_for_xml_producting_routine" id="php_example_of_creation_of_correct_header_for_xml_producting_routine">PHP Example of creation of correct header for XML producting routine:</a></h3>
+<div class="level3">
+<pre class="code javascript"><span class="sy0">&lt;?</span>php
+<span class="kw1">if</span> <span class="br0">&#40;</span> stristr<span class="br0">&#40;</span>$_SERVER<span class="br0">&#91;</span><span class="st0">&quot;HTTP_ACCEPT&quot;</span><span class="br0">&#93;</span><span class="sy0">,</span><span class="st0">&quot;application/xhtml+xml&quot;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                  header<span class="br0">&#40;</span><span class="st0">&quot;Content-type: application/xhtml+xml&quot;</span><span class="br0">&#41;</span>; <span class="br0">&#125;</span> <span class="kw1">else</span> <span class="br0">&#123;</span>
+                  header<span class="br0">&#40;</span><span class="st0">&quot;Content-type: text/xml&quot;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span>
+echo<span class="br0">&#40;</span><span class="st0">&quot;&lt;?xml version=<span class="es0">\&quot;</span>1.0<span class="es0">\&quot;</span> encoding=<span class="es0">\&quot;</span>iso-8859-1<span class="es0">\&quot;</span>?&gt;<span class="es0">\n</span>&quot;</span><span class="br0">&#41;</span>; 
+<span class="sy0">?&gt;</span></pre>
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     <!-- <div class="doc">
+        dhtmlxfolders/xml_format.txt &middot; Last modified: 2009/07/30 12:56 (external edit)      </div>
+    </div>-->
+
+   
+    <!--<div class="bar" id="bar__bottom">-->
+      <!--<div class="bar-left" id="bar__bottomleft">-->
+        <!---->
+        <!--<form class="button btn_revs" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxfolders:xml_format" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>-->
+      <!--</div>-->
+      <!--<div class="bar-right" id="bar__bottomright">-->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!--<form class="button btn_login" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="sectok" value="43b494ea79dddbda4e12ffb605a1024f" /><input type="hidden" name="id" value="dhtmlxfolders:xml_format" /><input type="submit" value="Login" class="button" title="Login" /></div></form>-->
+        <!--<form class="button btn_index" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="index" /><input type="hidden" name="id" value="dhtmlxfolders:xml_format" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [X]" /></div></form>-->
+        <!--<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;-->
+      <!--</div>-->
+      <!--<div class="clearer"></div>-->
+    <!--</div>-->
+
+  </div>
+
+  
+
+</div>
+
+<div class="footerinc">
+
+
+</div>
+
+<div class="no"><img src="/dhtmlx/_lab/wiki/lib/exe/indexer.php?id=dhtmlxfolders%3Axml_format&amp;1257950526" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2009 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

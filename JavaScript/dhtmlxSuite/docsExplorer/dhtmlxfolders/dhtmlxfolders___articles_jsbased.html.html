@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
+    dhtmlxfolders:articles_jsbased.html    [Skin test wiki]
+  </title></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Documentation homepage"></a>
+    <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
+
+    <div class="search-field">
+        <form action="http://dhtmlx.com/dhxdocs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>    </div>
+        <div class="buttons">
+                <a class="doc"></a>
+                <a title="DHTMLX Samples homepage" href="../samples.html" class="sample"/></a>
+        </div>
+     <!-- <div class="pagename">
+        [[<a href="#"  title="Backlinks">dhtmlxfolders:articles_jsbased.html</a>]]
+      </div>
+      <div class="logo">
+        <a href="/dhtmlx/_lab/wiki/doku.php"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">Skin test wiki</a>      </div>
+
+      <div class="clearer"></div>-->
+        
+    </div>
+
+    
+<!--   <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+                <form class="button btn_revs" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxfolders:articles_jsbased.html" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="recent" /><input type="hidden" name="id" value="dhtmlxfolders:articles_jsbased.html" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [R]" /></div></form>        <form action="http://dhtmlx.com/dhxdocs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div> -->
+
+<!--        <div class="breadcrumbs">
+      <span class="bchead">Trace:</span> <span class="bcsep">&raquo;</span> <span class="curid"><a href="/dhtmlx/_lab/wiki/doku.php?id=dhtmlxfolders:articles_jsbased.html"  class="breadcrumbs" title="dhtmlxfolders:articles_jsbased.html">articles_jsbased.html</a></span>    </div>
+    -->
+
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    
+<p>
+<div class='backlinks'><div class='backlink last_backlink'><img src="icons___file.gif"  class="media" alt="" /><a href="../index.html" class="wikilink1" title="start">Index</a></div><div class='arrow'></div><div class='backlink last_backlink'><img src="icons___folders.gif"  class="media" alt="" /><a href="index.html" class="wikilink1" title="dhtmlxfolders:toc">dhtmlxfolders</a></div><div class='arrow'></div><div class='backlink'><span class="curid"><a href="dhtmlxfolders___articles_jsbased.html.html" class="wikilink1" title="dhtmlxfolders:articles_jsbased.html"> Create your own Javascript Based Item Types for dhtmlxFolders </a></span></div></div>
+
+</p>
+
+<h2><a name="create_your_own_javascript_based_item_types_for_dhtmlxfolders" id="create_your_own_javascript_based_item_types_for_dhtmlxfolders">Create your own Javascript Based Item Types for dhtmlxFolders</a></h2>
+<div class="level2">
+
+<p>
+
+dhtmlxFolders provides the possibility to display any number of elements with the same structure. So, all we need to define is the structure of a single element – other elements will have the same structure with their own data. Data structure depends on your needs (we consider JSON object structure as Javascript based items. Even if you data loaded in <acronym title="Extensible Markup Language">XML</acronym> format, it will be transformed into JSON before parsing). For example:
+
+</p>
+<pre class="code javascript">    <span class="br0">&#91;</span><span class="br0">&#123;</span>id<span class="sy0">:</span><span class="nu0">1</span><span class="sy0">,</span>
+         <span class="kw3">name</span><span class="sy0">:</span><span class="st0">&quot;John Petrich&quot;</span><span class="sy0">,</span>
+         age<span class="sy0">:</span><span class="nu0">23</span><span class="br0">&#125;</span><span class="sy0">,</span>
+    <span class="br0">&#123;</span>id<span class="sy0">:</span><span class="nu0">2</span><span class="sy0">,</span>
+         <span class="kw3">name</span><span class="sy0">:</span><span class="st0">&quot;Peter Johnson&quot;</span><span class="sy0">,</span>
+         age<span class="sy0">:</span><span class="nu0">27</span><span class="br0">&#125;</span><span class="sy0">,</span>
+    <span class="br0">&#123;</span>id<span class="sy0">:</span><span class="nu0">3</span><span class="sy0">,</span>
+         <span class="kw3">name</span><span class="sy0">:</span><span class="st0">&quot;Kate Bronson&quot;</span><span class="sy0">,</span>
+         age<span class="sy0">:</span><span class="nu0">31</span><span class="br0">&#125;</span>
+    <span class="br0">&#93;</span></pre>
+<p>
+
+Depending on the type the data should look in the way you need and contain necessary data elements. From the example below you can display just name or name and age. This should be done with parser function, which gets JSON object as incoming argument and returns <acronym title="HyperText Markup Language">HTML</acronym> string which represents item in dhtmlxFolders. For example the following parser function will show name and age in different formatting:
+
+</p>
+<pre class="code javascript">    <span class="kw2">function</span> personParserFunc<span class="br0">&#40;</span>obj<span class="sy0">,</span>editMode<span class="sy0">,</span>selected<span class="sy0">,</span>active<span class="br0">&#41;</span><span class="br0">&#123;</span>
+        <span class="kw1">return</span> <span class="st0">&quot;&lt;div style='color:navy;'&gt;&quot;</span><span class="sy0">+</span>.<span class="me1">obj</span>.<span class="kw3">name</span><span class="br0">&#91;</span>0<span class="br0">&#93;</span><span class="sy0">+</span><span class="st0">&quot;&lt;/div&gt;&lt;small&gt;&quot;</span><span class="sy0">+</span>obj.<span class="me1">age</span><span class="br0">&#91;</span>0<span class="br0">&#93;</span><span class="sy0">+</span><span class="st0">&quot; years old&lt;/small&gt;&quot;</span>;
+    <span class="br0">&#125;</span></pre>
+<p>
+
+Incoming arguments:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> obj - json object which contains data;</div>
+</li>
+<li class="level2"><div class="li"> editMode - true if item should be displayed in edit mode;</div>
+</li>
+<li class="level2"><div class="li"> selected - true if item is selected;</div>
+</li>
+<li class="level2"><div class="li"> active - true for item which was clicked or selected last.</div>
+</li>
+</ul>
+
+<p>
+Having parser function you need to tell dhtmlxFolders that it should use this parser to create items. It should be done in the following way:
+
+</p>
+<pre class="code javascript">    myFolders.<a href='dhtmlxfolders___api_method_dhtmlxfolders_setitemtype.html'><b><span class="me1">setItemType</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;js_generic&quot;</span><span class="sy0">,</span>personParserFunc<span class="br0">&#41;</span>;</pre>
+<p>
+Resulting <acronym title="HyperText Markup Language">HTML</acronym> which dhtmlxFolders outputs for the first item will be:
+
+</p>
+<pre class="code javascript">    <span class="sy0">&lt;</span>div <span class="kw2">class</span><span class="sy0">=</span>”dhx_folders_GENERIC_item”<span class="sy0">&gt;&lt;</span>div style<span class="sy0">=</span>”color<span class="sy0">:</span>navy”<span class="sy0">&gt;</span>John Petrich<span class="sy0">&lt;/</span>div<span class="sy0">&gt;&lt;</span>small<span class="sy0">&gt;</span><span class="nu0">23</span> years old<span class="sy0">&lt;/</span>small<span class="sy0">&gt;&lt;</span>div<span class="sy0">&gt;</span></pre>
+<p>
+or (for selected item):
+</p>
+<pre class="code javascript">    <span class="sy0">&lt;</span>div <span class="kw2">class</span><span class="sy0">=</span>”dhx_folders_GENERIC_item_selected”<span class="sy0">&gt;&lt;</span>div style<span class="sy0">=</span>”color<span class="sy0">:</span>navy”<span class="sy0">&gt;</span>John Petrich<span class="sy0">&lt;/</span>div<span class="sy0">&gt;&lt;</span>small<span class="sy0">&gt;</span><span class="nu0">23</span> years old<span class="sy0">&lt;/</span>small<span class="sy0">&gt;&lt;</span>div<span class="sy0">&gt;</span></pre>
+<p>
+
+As you can see a new DIV appears. This is top element for each item, which will be created by dhtmlxFolders automatically to become a container for the content you have created with Javascript. Top element css class also can be reset to different value using setCSSBaseName method. For example using the following script command before loading myFolders content:
+
+</p>
+<pre class="code javascript">    myFolders.<a href='dhtmlxfolders___api_method_dhtmlxfolders_setcssbasename.html'><b><span class="me1">setCSSBaseName</span></b></a><span class="br0">&#40;</span>“test”<span class="br0">&#41;</span>;</pre>
+<p>
+
+will result in the following <acronym title="HyperText Markup Language">HTML</acronym>:
+
+</p>
+<pre class="code javascript">    <span class="sy0">&lt;</span>div <span class="kw2">class</span><span class="sy0">=</span>”dhx_folders_TEST_item”<span class="sy0">&gt;&lt;</span>div style<span class="sy0">=</span>”color<span class="sy0">:</span>navy”<span class="sy0">&gt;</span>John Petrich<span class="sy0">&lt;/</span>div<span class="sy0">&gt;&lt;</span>small<span class="sy0">&gt;</span><span class="nu0">23</span> years old<span class="sy0">&lt;/</span>small<span class="sy0">&gt;&lt;</span>div<span class="sy0">&gt;</span></pre>
+<p>
+or (for selected item):
+</p>
+<pre class="code javascript">    <span class="sy0">&lt;</span>div <span class="kw2">class</span><span class="sy0">=</span>”dhx_folders_item_TEST_selected”<span class="sy0">&gt;&lt;</span>div style<span class="sy0">=</span>”color<span class="sy0">:</span>navy”<span class="sy0">&gt;</span>John Petrich<span class="sy0">&lt;/</span>div<span class="sy0">&gt;&lt;</span>small<span class="sy0">&gt;</span><span class="nu0">23</span> years old<span class="sy0">&lt;/</span>small<span class="sy0">&gt;&lt;</span>div<span class="sy0">&gt;</span></pre>
+<p>
+
+If you compare it to the previous one you’ll see where “test” goes. Now you can define css for dhx_folders_TEST_item and dhx_folders_TEST_item_selected  classes to have your own style for top item element and included elements.
+</p>
+
+<p>
+The first argument tells dhtmlxFolders that created items are based on generic Javascript parser (not based on <acronym title="Extensible Markup Language">XML</acronym>-<acronym title="Extensible Stylesheet Language">XSL</acronym>), the second - is parser function to use. As it was mentioned above, using script way of parsing forces dhtmlxFolders to divide incoming <acronym title="Extensible Markup Language">XML</acronym> (if you&#039;ve loaded data in <acronym title="Extensible Markup Language">XML</acronym> format)  into json objects based on the tag name (default is “item”, but this name can be changed with setItemTagName mathod). In this case nested tags will be saved as property of the object (parent node) as an array of objects (tag value will be available as _nodevalue property) and attributes to  properties as simple values.
+</p>
+
+</div>
+
+<h3><a name="here_are_also_some_other_things_you_need_to_know_about_creating_your_own_parser_function_for_items" id="here_are_also_some_other_things_you_need_to_know_about_creating_your_own_parser_function_for_items">Here are also some other things you need to know about creating your own parser function for items:</a></h3>
+<div class="level3">
+
+<p>
+Inside parser function there are some objects accessible:
+this - refers to dhtmlxFolders object. Thus you can access any necessary value from it, like this._userdataCol - array of global userdata name-value pairs, which populated automatically from &lt;userdata&gt; tags located on first level of xml file (if original datasource loaded from server was in <acronym title="Extensible Markup Language">XML</acronym> format)
+</p>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     <!-- <div class="doc">
+        dhtmlxfolders/articles_jsbased.html.txt &middot; Last modified: 2009/07/30 12:56 (external edit)      </div>
+    </div>-->
+
+   
+    <!--<div class="bar" id="bar__bottom">-->
+      <!--<div class="bar-left" id="bar__bottomleft">-->
+        <!---->
+        <!--<form class="button btn_revs" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxfolders:articles_jsbased.html" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>-->
+      <!--</div>-->
+      <!--<div class="bar-right" id="bar__bottomright">-->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!--<form class="button btn_login" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="sectok" value="3e5e2aee501e5d7125d974ad93b39b2e" /><input type="hidden" name="id" value="dhtmlxfolders:articles_jsbased.html" /><input type="submit" value="Login" class="button" title="Login" /></div></form>-->
+        <!--<form class="button btn_index" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="index" /><input type="hidden" name="id" value="dhtmlxfolders:articles_jsbased.html" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [X]" /></div></form>-->
+        <!--<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;-->
+      <!--</div>-->
+      <!--<div class="clearer"></div>-->
+    <!--</div>-->
+
+  </div>
+
+  
+
+</div>
+
+<div class="footerinc">
+
+
+</div>
+
+<div class="no"><img src="/dhtmlx/_lab/wiki/lib/exe/indexer.php?id=dhtmlxfolders%3Aarticles_jsbased.html&amp;1257950522" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2009 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

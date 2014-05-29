@@ -1,0 +1,8 @@
+
+* { margin: 0; padding: 0; }
+body { padding: 0px; position:relative; color: #0000; font: 14px/normal Tahoma, Arial, Helvetica, sans-serif; }
+
+cite { float: right; }
+ul.classic { list-style: disc; margin-bottom: 1em; padding-left: 2em; }
+div.section { clear: both; padding-top: 50px; }
+

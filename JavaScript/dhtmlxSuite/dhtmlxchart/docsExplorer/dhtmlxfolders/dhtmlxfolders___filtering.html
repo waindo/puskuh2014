@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
+    dhtmlxfolders:filtering    [Skin test wiki]
+  </title></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Documentation homepage"></a>
+    <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
+
+    <div class="search-field">
+        <form action="http://dhtmlx.com/dhxdocs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>    </div>
+        <div class="buttons">
+                <a class="doc"></a>
+                <a title="DHTMLX Samples homepage" href="../samples.html" class="sample"/></a>
+        </div>
+     <!-- <div class="pagename">
+        [[<a href="#"  title="Backlinks">dhtmlxfolders:filtering</a>]]
+      </div>
+      <div class="logo">
+        <a href="/dhtmlx/_lab/wiki/doku.php"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">Skin test wiki</a>      </div>
+
+      <div class="clearer"></div>-->
+        
+    </div>
+
+    
+<!--   <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+                <form class="button btn_revs" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxfolders:filtering" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="recent" /><input type="hidden" name="id" value="dhtmlxfolders:filtering" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [R]" /></div></form>        <form action="http://dhtmlx.com/dhxdocs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div> -->
+
+<!--        <div class="breadcrumbs">
+      <span class="bchead">Trace:</span> <span class="bcsep">&raquo;</span> <span class="curid"><a href="/dhtmlx/_lab/wiki/doku.php?id=dhtmlxfolders:filtering"  class="breadcrumbs" title="dhtmlxfolders:filtering">filtering</a></span>    </div>
+    -->
+
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#filtering" class="toc">Filtering</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#apply_filter" class="toc">Apply Filter</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#clear_filters" class="toc">Clear Filters</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#apply_multiple_filters" class="toc">Apply Multiple Filters</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<p>
+<div class='backlinks'><div class='backlink last_backlink'><img src="icons___file.gif"  class="media" alt="" /><a href="../index.html" class="wikilink1" title="start">Index</a></div><div class='arrow'></div><div class='backlink last_backlink'><img src="icons___folders.gif"  class="media" alt="" /><a href="index.html" class="wikilink1" title="dhtmlxfolders:toc">dhtmlxfolders</a></div><div class='arrow'></div><div class='backlink'><span class="curid"><a href="dhtmlxfolders___filtering.html" class="wikilink1" title="dhtmlxfolders:filtering"> Filtering </a></span></div></div>
+
+</p>
+
+<h2><a name="filtering" id="filtering">Filtering</a></h2>
+<div class="level2">
+
+</div>
+
+<h3><a name="apply_filter" id="apply_filter">Apply Filter</a></h3>
+<div class="level3">
+
+<p>
+
+Use filterItems(…) method to filter dhtmlxFolder items by some mask.
+Like with sorting, to create filter for dhtmlxFolders item you need to define function where you decide if item should be visible after filter applied or not. This function gets abstract item object as first incoming argument and mask as second argument.  Function returns true if item should be visible, false if it shouldn&#039;t be.
+</p>
+
+<p>
+
+For example <acronym title="Extensible Markup Language">XML</acronym> representation of item in dhtmlxFolders is the following:
+
+</p>
+<pre class="code javascript"><span class="sy0">&lt;</span>item <span class="kw3">name</span><span class="sy0">=</span><span class="st0">&quot;[string]&quot;</span> id<span class="sy0">=</span><span class="st0">&quot;[string]&quot;</span><span class="sy0">&gt;</span>
+  <span class="sy0">&lt;</span>size<span class="sy0">&gt;</span><span class="br0">&#91;</span>numeric value<span class="br0">&#93;</span><span class="sy0">&lt;/</span>size<span class="sy0">&gt;</span>
+<span class="sy0">&lt;/</span>item<span class="sy0">&gt;</span></pre>
+<p>
+
+To filter items which name begins with some value, we define the following function:
+
+</p>
+<pre class="code javascript"><span class="kw2">function</span> filterByName<span class="br0">&#40;</span>obj<span class="sy0">,</span>mask<span class="br0">&#41;</span><span class="br0">&#123;</span>
+  <span class="kw2">var</span> aName <span class="sy0">=</span> obj.<span class="me1">data</span>.<span class="me1">dataObj</span>.<span class="me1">getAttribute</span><span class="br0">&#40;</span><span class="st0">&quot;name&quot;</span><span class="br0">&#41;</span>;
+  <span class="kw1">return</span> <span class="br0">&#40;</span>aName.<span class="me1">toString</span><span class="br0">&#40;</span><span class="br0">&#41;</span>.<span class="me1">indexOf</span><span class="br0">&#40;</span>mask<span class="br0">&#41;</span><span class="sy0">==</span>0 || mask<span class="sy0">==</span><span class="st0">&quot;&quot;</span><span class="br0">&#41;</span>;
+<span class="br0">&#125;</span></pre>
+<p>
+
+Complete filtering command will be the following:
+
+</p>
+<pre class="code javascript">  myFolders.<a href='dhtmlxfolders___api_method_dhtmlxfolders_filteritems.html'><b><span class="me1">filterItems</span></b></a><span class="br0">&#40;</span>filterByName<span class="sy0">,</span><span class="st0">&quot;[mask value]&quot;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h3><a name="clear_filters" id="clear_filters">Clear Filters</a></h3>
+<div class="level3">
+
+<p>
+To clear all applied filters use filterClear method:
+
+</p>
+<pre class="code javascript">myFolders.<a href='dhtmlxfolders___api_method_dhtmlxfolders_filterclear.html'><b><span class="me1">filterClear</span></b></a><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+</div>
+
+<h3><a name="apply_multiple_filters" id="apply_multiple_filters">Apply Multiple Filters</a></h3>
+<div class="level3">
+
+<p>
+
+To apply filter keeping previous filters use the third argument of filterItems method:
+
+</p>
+<pre class="code javascript">  myFolders.<a href='dhtmlxfolders___api_method_dhtmlxfolders_filteritems.html'><b><span class="me1">filterItems</span></b></a><span class="br0">&#40;</span>filterByName<span class="sy0">,</span><span class="st0">&quot;[mask value]&quot;</span><span class="br0">&#41;</span>;
+  myFolders.<a href='dhtmlxfolders___api_method_dhtmlxfolders_filteritems.html'><b><span class="me1">filterItems</span></b></a><span class="br0">&#40;</span>filterBySize<span class="sy0">,</span><span class="st0">&quot;[mask value]&quot;</span><span class="sy0">,</span><span class="kw2">true</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+This code will filter items by name and then (keeping results of first filtering) by size.
+</p>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     <!-- <div class="doc">
+        dhtmlxfolders/filtering.txt &middot; Last modified: 2009/07/30 12:56 (external edit)      </div>
+    </div>-->
+
+   
+    <!--<div class="bar" id="bar__bottom">-->
+      <!--<div class="bar-left" id="bar__bottomleft">-->
+        <!---->
+        <!--<form class="button btn_revs" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxfolders:filtering" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>-->
+      <!--</div>-->
+      <!--<div class="bar-right" id="bar__bottomright">-->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!--<form class="button btn_login" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="sectok" value="79df30e76badfea6cfc0f398d2c4e786" /><input type="hidden" name="id" value="dhtmlxfolders:filtering" /><input type="submit" value="Login" class="button" title="Login" /></div></form>-->
+        <!--<form class="button btn_index" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="index" /><input type="hidden" name="id" value="dhtmlxfolders:filtering" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [X]" /></div></form>-->
+        <!--<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;-->
+      <!--</div>-->
+      <!--<div class="clearer"></div>-->
+    <!--</div>-->
+
+  </div>
+
+  
+
+</div>
+
+<div class="footerinc">
+
+
+</div>
+
+<div class="no"><img src="/dhtmlx/_lab/wiki/lib/exe/indexer.php?id=dhtmlxfolders%3Afiltering&amp;1257950518" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2009 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>

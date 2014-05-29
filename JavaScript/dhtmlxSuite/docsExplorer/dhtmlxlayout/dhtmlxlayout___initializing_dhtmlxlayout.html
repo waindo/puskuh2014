@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" href="../codebase/default.css" type="text/css" media="screen" title="no title" charset="utf-8"><title>
+    dhtmlxlayout:initializing_dhtmlxlayout    [Skin test wiki]
+  </title></head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+    <a class="logo" href="http://dhtmlx.com" title="DHTMLX Documentation homepage"></a>
+    <span class="tittle-dhtmlx">DHTMLX Docs & Samples Explorer</span>
+
+    <div class="search-field">
+        <form action="http://dhtmlx.com/dhxdocs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>    </div>
+        <div class="buttons">
+                <a class="doc"></a>
+                <a title="DHTMLX Samples homepage" href="../samples.html" class="sample"/></a>
+        </div>
+     <!-- <div class="pagename">
+        [[<a href="#"  title="Backlinks">dhtmlxlayout:initializing_dhtmlxlayout</a>]]
+      </div>
+      <div class="logo">
+        <a href="/dhtmlx/_lab/wiki/doku.php"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[H]">Skin test wiki</a>      </div>
+
+      <div class="clearer"></div>-->
+        
+    </div>
+
+    
+<!--   <div class="bar" id="bar__top">
+      <div class="bar-left" id="bar__topleft">
+                <form class="button btn_revs" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxlayout:initializing_dhtmlxlayout" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>      </div>
+
+      <div class="bar-right" id="bar__topright">
+        <form class="button btn_recent" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="recent" /><input type="hidden" name="id" value="dhtmlxlayout:initializing_dhtmlxlayout" /><input type="submit" value="Recent changes" class="button" accesskey="r" title="Recent changes [R]" /></div></form>        <form action="http://dhtmlx.com/dhxdocs/doku.php" accept-charset="utf-8" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" title="Search" /><button type="submit"></button><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+
+      <div class="clearer"></div>
+    </div> -->
+
+<!--        <div class="breadcrumbs">
+      <span class="bchead">Trace:</span> <span class="bcsep">&raquo;</span> <span class="curid"><a href="/dhtmlx/_lab/wiki/doku.php?id=dhtmlxlayout:initializing_dhtmlxlayout"  class="breadcrumbs" title="dhtmlxlayout:initializing_dhtmlxlayout">initializing_dhtmlxlayout</a></span>    </div>
+    -->
+
+    
+  </div>
+  
+  
+  <div class="page">
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#initializing_dhtmlxlayout" class="toc">Initializing dhtmlxLayout</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#object-based_initialization" class="toc">Object-Based Initialization</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#window-based_initialization" class="toc">Window-Based Initialization</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#fullscreen_initialization" class="toc">Fullscreen Initialization</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#layout_s_cell-based_initialization" class="toc">Layout&#039;s Cell-Based Initialization</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#recommended_initialization_way" class="toc">Recommended Initialization Way</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#recommended_full-screened_initialization_way" class="toc">Recommended Full-Screened Initialization Way</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+<p>
+<div class='backlinks'><div class='backlink last_backlink'><img src="icons___file.gif"  class="media" alt="" /><a href="../index.html" class="wikilink1" title="start">Index</a></div><div class='arrow'></div><div class='backlink last_backlink'><img src="icons___layout.gif"  class="media" alt="" /><a href="index.html" class="wikilink1" title="dhtmlxlayout:toc">dhtmlxlayout</a></div><div class='arrow'></div><div class='backlink'><span class="curid"><a href="dhtmlxlayout___initializing_dhtmlxlayout.html" class="wikilink1" title="dhtmlxlayout:initializing_dhtmlxlayout">  Initializing dhtmlxLayout  </a></span></div></div>
+
+</p>
+
+<h2><a name="initializing_dhtmlxlayout" id="initializing_dhtmlxlayout">Initializing dhtmlxLayout</a></h2>
+<div class="level2">
+
+<p>
+There are three ways of initializing dhtmlxLayout:
+</p>
+<ul>
+<li class="level1"><div class="li">  Object-based initialization - in this case an object on page acts as Layout&#039;s container (parent);</div>
+</li>
+<li class="level1"><div class="li">  Window-based initialization - initialization of this kind means that a window (member of dhtmlxWindows system) is made Layout&#039;s parent;</div>
+</li>
+<li class="level1"><div class="li">  Fullscreen initialization - this third type of initialization presupposes that Layout&#039;s parent is “document.body” itself. In this case the Layout takes up the entire page;</div>
+</li>
+<li class="level1"><div class="li">  Layout&#039;s cell-based initialization - this one more type of initialization creates a Layout parent of which is some cell of another dhtmlxLayout. This newly created Layout will be placed in another layout&#039;s cell. </div>
+</li>
+</ul>
+
+<p>
+
+The first things that need to be done for any type of dhtmlxLayout&#039;s initialization are the following:
+</p>
+<ul>
+<li class="level1"><div class="li">  Download the dhtmlxLayout package from the server and place it in a folder;</div>
+</li>
+<li class="level1"><div class="li">  Create an index.html file;</div>
+</li>
+<li class="level1"><div class="li">  Place the full paths to dhtmlxLayout&#039;s <acronym title="Cascading Style Sheets">CSS</acronym> and <acronym title="JavaScript">JS</acronym> files into the header of html file.</div>
+</li>
+</ul>
+<pre class="code javascript">&nbsp;
+    <span class="sy0">&lt;</span>head<span class="sy0">&gt;</span>
+&nbsp;
+        <span class="sy0">&lt;</span>script src<span class="sy0">=</span><span class="st0">&quot;[full path to this file]/dhtmlxcommon.js&quot;</span><span class="sy0">&gt;&lt;/</span>script<span class="sy0">&gt;</span>
+&nbsp;
+        <span class="sy0">&lt;!--</span> dhtmlxLayout <span class="sy0">--&gt;</span>
+        <span class="sy0">&lt;</span>link rel<span class="sy0">=</span><span class="st0">&quot;stylesheet&quot;</span> type<span class="sy0">=</span><span class="st0">&quot;text/css&quot;</span> href<span class="sy0">=</span><span class="st0">&quot;[full path to this file]/dhtmlxlayout.css&quot;</span><span class="sy0">&gt;</span>
+        <span class="sy0">&lt;</span>link rel<span class="sy0">=</span><span class="st0">&quot;stylesheet&quot;</span> type<span class="sy0">=</span><span class="st0">&quot;text/css&quot;</span> href<span class="sy0">=</span><span class="st0">&quot;[full path to this file]/dhtmlxlayout_dhx_blue.css&quot;</span><span class="sy0">&gt;</span>
+        <span class="sy0">&lt;</span>script src<span class="sy0">=</span><span class="st0">&quot;[full path to this file]/dhtmlxcommon.js&quot;</span><span class="sy0">&gt;&lt;/</span>script<span class="sy0">&gt;</span>
+        <span class="sy0">&lt;</span>script src<span class="sy0">=</span><span class="st0">&quot;[full path to this file]/dhtmlxcontainer.js&quot;</span><span class="sy0">&gt;&lt;/</span>script<span class="sy0">&gt;</span>
+        <span class="sy0">&lt;</span>script src<span class="sy0">=</span><span class="st0">&quot;[full path to this file]/dhtmlxlayout.js&quot;</span><span class="sy0">&gt;&lt;/</span>script<span class="sy0">&gt;</span>
+&nbsp;
+    <span class="sy0">&lt;/</span>head<span class="sy0">&gt;</span></pre>
+<p>
+Note: dhx_skyblue is the default skin. If the user chooses to apply some other skin, he should indicate path to the appropriate dhtmlxlayout_[name_of_the_skin].css file from dhtmlxLayout package.
+</p>
+
+<p>
+
+If the user works with all available visible space, we recommend him to specify the following style for the &lt;body&gt; tag to make dhtmlxLayout and dhtmlxWindows work correctly:
+</p>
+<ul>
+<li class="level1"><div class="li">  width:100%; height:100% - to obtain correct work of fullscreen layout;</div>
+</li>
+<li class="level1"><div class="li">  margin:0px - to hide default body space;</div>
+</li>
+<li class="level1"><div class="li">  overflow:hidden - to hide body scrolls.</div>
+</li>
+</ul>
+<pre class="code javascript">  <span class="sy0">&lt;</span>style<span class="sy0">&gt;</span>
+     html<span class="sy0">,</span> body <span class="br0">&#123;</span>
+        width<span class="sy0">:</span> <span class="nu0">100</span>%;
+        height<span class="sy0">:</span> <span class="nu0">100</span>%;
+        margin<span class="sy0">:</span> 0px;
+        overflow<span class="sy0">:</span> hidden;
+     <span class="br0">&#125;</span>
+  <span class="sy0">&lt;/</span>style<span class="sy0">&gt;</span></pre>
+<p>
+From this point further steps the user should take are different for every kind of initialization.
+</p>
+
+</div>
+
+<h3><a name="object-based_initialization" id="object-based_initialization">Object-Based Initialization</a></h3>
+<div class="level3">
+
+<p>
+We need to create an object where dhtmlxLayout will be placed later. In this example the object is a &lt;div&gt; element on page which is placed in the &lt;body&gt; tag:
+
+</p>
+<pre class="code javascript">    <span class="sy0">&lt;</span>div id<span class="sy0">=</span><span class="st0">&quot;parentId&quot;</span> style<span class="sy0">=</span><span class="st0">&quot;position:absolute; width:600px; height:400px;&quot;</span><span class="sy0">&gt;&lt;/</span>div<span class="sy0">&gt;</span></pre>
+<p>
+
+The next step is to create a new dhtmlXLayoutObject and place it after the &lt;div&gt; element (object) that we&#039;ve just created. The initialization can be done either through objectId (as the first argument):
+
+</p>
+<pre class="code javascript">    <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>     
+        <span class="kw2">var</span> dhxLayout <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXLayoutObject<span class="br0">&#40;</span><span class="st0">&quot;parentId&quot;</span><span class="sy0">,</span> <span class="st0">&quot;3L&quot;</span><span class="sy0">,</span> <span class="st0">&quot;dhx_black&quot;</span><span class="br0">&#41;</span>
+    <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+<p>
+
+or through object (as the first argument):
+
+</p>
+<pre class="code javascript">    <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>      
+        <span class="kw2">var</span> obj <span class="sy0">=</span> document.<span class="me1">getElementById</span><span class="br0">&#40;</span><span class="st0">&quot;parentId&quot;</span><span class="br0">&#41;</span>;
+        <span class="kw2">var</span> dhxLayout <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXLayoutObject<span class="br0">&#40;</span>obj<span class="sy0">,</span> <span class="st0">&quot;3L&quot;</span><span class="sy0">,</span> <span class="st0">&quot;dhx_black&quot;</span><span class="br0">&#41;</span>;
+    <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+<p>
+
+The second argument in dhtmlXLayoutObject() is the code of the Layout&#039;s pattern.
+</p>
+
+<p>
+The third argument is optional, and it indicates the name of the skin chosen for the Layout. If this argument is not indicated, the component will be created with the default skin (dhx_skyblue).
+</p>
+
+</div>
+
+<h3><a name="window-based_initialization" id="window-based_initialization">Window-Based Initialization</a></h3>
+<div class="level3">
+
+<p>
+For this type of initialization, the user needs to create a dhtmlxWindows object:
+</p>
+<pre class="code javascript">      <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>  
+          <span class="kw2">var</span> dhxWins <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXWindows<span class="br0">&#40;</span><span class="br0">&#41;</span>;
+          <span class="kw2">var</span> layoutWin <span class="sy0">=</span> dhxWins.<a href='dhtmlxwindows___api_method_dhtmlxwindows_createwindow.html'><b><span class="me1">createWindow</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;w1&quot;</span><span class="sy0">,</span> <span class="nu0">20</span><span class="sy0">,</span> <span class="nu0">20</span><span class="sy0">,</span> <span class="nu0">600</span><span class="sy0">,</span> <span class="nu0">400</span><span class="br0">&#41;</span>;
+      <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+<p>
+
+The following parameters should be passed to dhxWins.createWindow():
+</p>
+<ul>
+<li class="level1"><div class="li">  “w1” - id of the window;</div>
+</li>
+<li class="level1"><div class="li">  20, 20 - the left and the top positions of the window;</div>
+</li>
+<li class="level1"><div class="li">  600, 400 - the width and the height of the window.</div>
+</li>
+</ul>
+
+<p>
+
+Then we get window-based layout by passing a window object into the Layout&#039;s constructor. The following line of code should be added to the above mentioned snippet: 
+
+</p>
+<pre class="code javascript">    <span class="kw2">var</span> dhxLayout <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXLayoutObject<span class="br0">&#40;</span>layoutWin<span class="sy0">,</span> <span class="st0">&quot;3L&quot;</span><span class="sy0">,</span> <span class="st0">&quot;dhx_black&quot;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+The second argument is the code of the <a href="dhtmlxlayout___dhtmlxlayout_configuration.html" class="wikilink1" title="dhtmlxlayout:dhtmlxlayout_configuration">Layout&#039;s pattern</a>.
+The third one is optional, and it indicates the name of the <a href="dhtmlxlayout___dhtmlxlayout_configuration.html" class="wikilink1" title="dhtmlxlayout:dhtmlxlayout_configuration">skin</a> chosen for the Layout. If this argument is not indicated, the component will be created with the default skin (dhx_skyblue).
+
+</p>
+
+</div>
+
+<h3><a name="fullscreen_initialization" id="fullscreen_initialization">Fullscreen Initialization</a></h3>
+<div class="level3">
+
+<p>
+The Layout initialized in this way will occupy the whole visible screen area in the browser:
+
+</p>
+<pre class="code javascript">  <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span> 
+      <span class="kw2">var</span> dhxLayout <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXLayoutObject<span class="br0">&#40;</span>document.<span class="me1">body</span><span class="sy0">,</span> <span class="st0">&quot;3L&quot;</span><span class="sy0">,</span> <span class="st0">&quot;dhx_black&quot;</span><span class="br0">&#41;</span>;
+  <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+<p>
+
+The first argument for dhtmlXLayoutObject() in this case should be “document.body”.
+The second one - the code of the <a href="dhtmlxlayout___dhtmlxlayout_configuration.html" class="wikilink1" title="dhtmlxlayout:dhtmlxlayout_configuration">Layout&#039;s pattern</a>.
+The third argument is optional, and it indicates the name of the <a href="dhtmlxlayout___dhtmlxlayout_configuration.html" class="wikilink1" title="dhtmlxlayout:dhtmlxlayout_configuration">skin</a> chosen for the Layout. If this argument is not indicated, the component will be created with the default skin (dhx_skyblue).
+</p>
+
+</div>
+
+<h3><a name="layout_s_cell-based_initialization" id="layout_s_cell-based_initialization">Layout&#039;s Cell-Based Initialization</a></h3>
+<div class="level3">
+
+<p>
+This type of initialization means that some Layout&#039;s cell will be made parent for the newly created Layout. First, the user needs to create a new dhtmlXLayoutObject, indicate its pattern type and skin (optional):
+
+</p>
+<pre class="code javascript">  <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+      <span class="kw2">var</span> dhxLayout <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXLayoutObject<span class="br0">&#40;</span><span class="st0">&quot;parentId&quot;</span><span class="sy0">,</span> <span class="st0">&quot;3L&quot;</span><span class="br0">&#41;</span>;   
+  <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+<p>
+
+Then another dhtmlXLayoutObject will be created, and it&#039;s parent should be indicated either through cells or through items:
+</p>
+<pre class="code javascript">  <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+      <span class="kw2">var</span> Layout1 <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXLayoutObject<span class="br0">&#40;</span>dhxLayout.<a href='dhtmlxlayout___api_method_dhtmlxlayoutobject_cells.html'><b><span class="me1">cells</span></b></a><span class="br0">&#40;</span><span class="st0">&quot;a&quot;</span><span class="br0">&#41;</span><span class="sy0">,</span> <span class="st0">&quot;2U&quot;</span><span class="br0">&#41;</span>;
+          <span class="co1">// OR</span>
+      <span class="kw2">var</span> Layout1 <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXLayoutObject<span class="br0">&#40;</span>dhxLayout.<span class="me1">items</span><span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span><span class="sy0">,</span> <span class="st0">&quot;2U&quot;</span><span class="br0">&#41;</span>;
+  <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span></pre>
+<p>
+
+Refer to <a href="dhtmlxlayout___items_manipulations.html" class="wikilink1" title="dhtmlxlayout:items_manipulations">Items Accessing</a> section for more information on cells and items.
+</p>
+
+</div>
+
+<h3><a name="recommended_initialization_way" id="recommended_initialization_way">Recommended Initialization Way</a></h3>
+<div class="level3">
+<pre class="code javascript">  <span class="sy0">&lt;</span>html<span class="sy0">&gt;</span>
+  <span class="sy0">&lt;</span>head<span class="sy0">&gt;</span>
+      ...
+       <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+              <span class="kw2">var</span> dhxLayout;
+               <span class="kw2">function</span> doOnLoad<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                      dhxLayout <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXLayoutObject<span class="br0">&#40;</span>...<span class="br0">&#41;</span>;
+              <span class="br0">&#125;</span>
+       <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span>
+  <span class="sy0">&lt;/</span>head<span class="sy0">&gt;</span>
+  <span class="sy0">&lt;</span>body <span class="kw3">onload</span><span class="sy0">=</span><span class="st0">&quot;doOnLoad();&quot;</span><span class="sy0">&gt;</span>
+      ...
+  <span class="sy0">&lt;/</span>body<span class="sy0">&gt;</span>
+  <span class="sy0">&lt;/</span>html<span class="sy0">&gt;</span></pre>
+</div>
+
+<h3><a name="recommended_full-screened_initialization_way" id="recommended_full-screened_initialization_way">Recommended Full-Screened Initialization Way</a></h3>
+<div class="level3">
+<pre class="code javascript">  <span class="sy0">&lt;</span>html<span class="sy0">&gt;</span>
+  <span class="sy0">&lt;</span>head<span class="sy0">&gt;</span>
+      ...
+      <span class="sy0">&lt;</span>style<span class="sy0">&gt;</span>
+            html<span class="sy0">,</span> body <span class="br0">&#123;</span>
+                      width<span class="sy0">:</span> <span class="nu0">100</span>%;
+                      height<span class="sy0">:</span> <span class="nu0">100</span>%;
+                      margin<span class="sy0">:</span> 0px;
+                      overflow<span class="sy0">:</span> hidden;
+              <span class="br0">&#125;</span>
+      <span class="sy0">&lt;/</span>style<span class="sy0">&gt;</span>
+      <span class="sy0">&lt;</span>script<span class="sy0">&gt;</span>
+              <span class="kw2">var</span> dhxLayout;
+              <span class="kw2">function</span> doOnLoad<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+                  dhxLayout <span class="sy0">=</span> <span class="kw2">new</span> dhtmlXLayoutObject<span class="br0">&#40;</span>...<span class="br0">&#41;</span>;
+              <span class="br0">&#125;</span>
+       <span class="sy0">&lt;/</span>script<span class="sy0">&gt;</span>
+  <span class="sy0">&lt;/</span>head<span class="sy0">&gt;</span>
+  <span class="sy0">&lt;</span>body <span class="kw3">onload</span><span class="sy0">=</span><span class="st0">&quot;doOnLoad();&quot;</span><span class="sy0">&gt;</span>
+      ...
+  <span class="sy0">&lt;/</span>body<span class="sy0">&gt;</span>
+  <span class="sy0">&lt;/</span>html<span class="sy0">&gt;</span></pre>
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+     <!-- <div class="doc">
+        dhtmlxlayout/initializing_dhtmlxlayout.txt &middot; Last modified: 2009/09/04 14:40 (external edit)      </div>
+    </div>-->
+
+   
+    <!--<div class="bar" id="bar__bottom">-->
+      <!--<div class="bar-left" id="bar__bottomleft">-->
+        <!---->
+        <!--<form class="button btn_revs" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="revisions" /><input type="hidden" name="id" value="dhtmlxlayout:initializing_dhtmlxlayout" /><input type="submit" value="Old revisions" class="button" accesskey="o" title="Old revisions [O]" /></div></form>-->
+      <!--</div>-->
+      <!--<div class="bar-right" id="bar__bottomright">-->
+        <!---->
+        <!---->
+        <!---->
+        <!---->
+        <!--<form class="button btn_login" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="login" /><input type="hidden" name="sectok" value="4d112798f166bea7344dc7af5ee2604e" /><input type="hidden" name="id" value="dhtmlxlayout:initializing_dhtmlxlayout" /><input type="submit" value="Login" class="button" title="Login" /></div></form>-->
+        <!--<form class="button btn_index" method="get" action="http://dhtmlx.com/dhxdocs/doku.php"><div class="no"><input type="hidden" name="do" value="index" /><input type="hidden" name="id" value="dhtmlxlayout:initializing_dhtmlxlayout" /><input type="submit" value="Index" class="button" accesskey="x" title="Index [X]" /></div></form>-->
+        <!--<a class="nolink" href="#dokuwiki__top"><input type="button" class="button" value="Back to top" onclick="window.scrollTo(0, 0)" title="Back to top" /></a>&nbsp;-->
+      <!--</div>-->
+      <!--<div class="clearer"></div>-->
+    <!--</div>-->
+
+  </div>
+
+  
+
+</div>
+
+<div class="footerinc">
+
+
+</div>
+
+<div class="no"><img src="/dhtmlx/_lab/wiki/lib/exe/indexer.php?id=dhtmlxlayout%3Ainitializing_dhtmlxlayout&amp;1257949855" width="1" height="1" alt=""  /></div>
+     <div class="footer">
+        <div class="footer-logo"></div>
+        <div class="copyright">Copyright © 1998-2009 DHTMLX LTD.<br />All rights reserved.</div>
+            	    </div>
+</body>
+</html>
